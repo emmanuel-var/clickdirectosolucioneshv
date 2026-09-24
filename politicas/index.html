@@ -124,6 +124,13 @@
               <span class="arrow" aria-hidden="true">→</span>
             </a>
           </li>
+          <li>
+            <a href="#audio-notas-manos-libres">
+              <span class="app-icon" style="background:#0284c7" aria-hidden="true">AN</span>
+              <span><strong>Audio Notas Manos Libres</strong><small>Android · Productividad</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -211,6 +218,74 @@
 
           <div class="policy-actions">
             <button class="pill copy-link" type="button" data-id="simulador-aura-points">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: Audio Notas Manos Libres
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#audio-notas-manos-libres
+             ===================================================================== -->
+        <article class="policy" id="audio-notas-manos-libres">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#0284c7" aria-hidden="true">AN</span>
+            <h2>Política de Privacidad<span>Audio Notas Manos Libres</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 24 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <h3>Resumen</h3>
+          <p>Audio Notas Manos Libres es una aplicación cuyo procesamiento de audio, transcripción y estructuración de texto ocurre siempre de forma local en tu dispositivo. No operamos servidores propios, no recopilamos ni transmitimos tus grabaciones, transcripciones ni notas a Internet: eso sigue siendo así sin excepción.</p>
+          <p>La app muestra un banner publicitario (Google AdMob) en la pantalla principal para poder ofrecerse de forma gratuita. Esto introduce una única excepción, acotada y explicada en detalle en la sección "Publicidad (Google AdMob)" más abajo: para poder mostrar y medir esos anuncios, Google recibe ciertos datos técnicos del dispositivo (no tu audio, ni tus transcripciones, ni tus notas — esos nunca salen del teléfono).</p>
+
+          <h3>Datos que la app maneja</h3>
+          <ul>
+            <li>El <strong>audio grabado o importado</strong> se guarda en el almacenamiento privado de la app y nunca sale del dispositivo.</li>
+            <li>Las <strong>transcripciones y los pasos o acuerdos estructurados</strong> se guardan en una base de datos local (Room/SQLite) y tampoco salen del dispositivo.</li>
+            <li>Las <strong>preferencias</strong>, como el idioma o el modelo activo, se guardan en DataStore local y no salen del dispositivo.</li>
+            <li>Los <strong>modelos de IA descargados</strong> (Whisper/LLM) se guardan también en el almacenamiento privado de la app; se descargan desde repositorios públicos de terceros, como se explica más abajo.</li>
+          </ul>
+
+          <h3>Permisos utilizados</h3>
+          <ul>
+            <li><strong>Micrófono:</strong> para grabar audio a transcribir y para escuchar comandos de voz cortos ("siguiente", "repetir") en el Modo Manos Libres. El audio de los comandos se procesa con el reconocedor de voz nativo de Android configurado en modo preferentemente offline.</li>
+            <li><strong>Notificaciones:</strong> para mostrar una notificación persistente y no intrusiva mientras la grabación o el Modo Manos Libres están activos en segundo plano.</li>
+            <li><strong>Internet:</strong> usado exclusivamente para descargar, bajo tu autorización explícita desde Ajustes, los modelos de IA (Whisper/LLM) publicados en repositorios públicos de terceros (Hugging Face). Una vez descargados, la app funciona sin conexión.</li>
+          </ul>
+
+          <h3>Publicidad (Google AdMob)</h3>
+          <p>La app muestra un banner publicitario en la pantalla principal usando Google AdMob. Esto es lo único en la app que involucra a un tercero.</p>
+
+          <h4>Qué datos recibe Google</h4>
+          <p>Para poder seleccionar, mostrar y medir el rendimiento de los anuncios, el SDK de Google Mobile Ads y el SDK de User Messaging Platform (UMP) recopilan datos técnicos del dispositivo — por ejemplo, el identificador de publicidad (Advertising ID), dirección IP aproximada, tipo de dispositivo e interacciones con el anuncio (impresiones, clics). Estos datos los procesa Google conforme a su propia Política de Privacidad (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>) y, cuando aplica, a su Política de Privacidad de Anuncios (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a>).</p>
+
+          <h4>Qué datos NO recibe Google</h4>
+          <p>Tu audio grabado o importado, las transcripciones, los pasos o acuerdos estructurados y tus preferencias de la app. Esos datos jamás llegan a AdMob ni a ningún otro servicio — siguen siendo 100% locales, tal como se describe en el resto de este documento.</p>
+
+          <h4>Consentimiento</h4>
+          <p>Si te encuentras en el Espacio Económico Europeo, el Reino Unido, o cualquier otra región donde la normativa lo exija, la app te muestra automáticamente al arrancar un formulario de consentimiento (mediante el SDK oficial User Messaging Platform de Google) antes de solicitar cualquier anuncio. Puedes revisar o cambiar tu elección en cualquier momento desde <code>Ajustes → "Opciones de privacidad"</code>.</p>
+
+          <h4>IDs de anuncio</h4>
+          <p>La app usa una cuenta real de Google AdMob del desarrollador para mostrar el banner (los anuncios que ves en la versión publicada en Play Store son reales, no de prueba). Durante el propio desarrollo de la app, las compilaciones de depuración usan en su lugar los IDs de PRUEBA públicos de Google, que no muestran anuncios reales ni recopilan datos de usuarios reales para publicidad. Esta política deberá actualizarse si se añaden más formatos de anuncio (por ejemplo, intersticiales) en el futuro.</p>
+
+          <h3>Compartir datos con terceros</h3>
+          <p>Fuera de lo descrito en la sección "Publicidad (Google AdMob)" de arriba, no compartimos, vendemos ni transmitimos tus datos a terceros. La app no incluye ningún SDK de analítica que rastree al usuario.</p>
+
+          <h3>Exportación y eliminación de datos</h3>
+          <p>Desde Ajustes puedes exportar tu historial completo a CSV o PDF, y eliminar sesiones individuales o desinstalar la app para borrar toda la información almacenada localmente.</p>
+
+          <h3>Menores de edad</h3>
+          <p>La app no está dirigida a menores de 13 años ni a audiencias infantiles, y no se configura para solicitar anuncios personalizados dirigidos a menores. Salvo por los datos técnicos que AdMob recibe para mostrar anuncios (ver sección anterior), la app no recopila ni transmite datos personales de ningún usuario, sin importar su edad.</p>
+
+          <h3>Contacto</h3>
+          <p>Para preguntas sobre esta política, contacta a: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="audio-notas-manos-libres">Copiar enlace</button>
             <button class="pill" type="button" onclick="window.print()">Imprimir</button>
           </div>
         </article>
