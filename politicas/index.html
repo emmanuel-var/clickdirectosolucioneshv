@@ -74,6 +74,17 @@
     body.single .apps-index, body.single .policy:not(.active) { display: none; }
     body.single .show-all { display: inline-flex; }
 
+
+    /* Sección destacada (p. ej. eliminación de datos) */
+    .callout { margin: 2em 0 1em; padding: 22px 22px 10px; border: 2px solid #dc2626; border-radius: var(--radius); background: #fef2f2; box-shadow: 0 6px 20px rgba(220,38,38,.12); }
+    .callout-head { display: flex; align-items: center; gap: 12px; color: #b91c1c; }
+    .callout-head h3 { margin: 0; color: #b91c1c; font-size: 1.25rem; }
+    .callout-lead { margin-top: 12px; font-size: 1.05rem; color: #7f1d1d !important; }
+    .callout li { margin-bottom: 10px; }
+    .callout code { background: #fff; }
+    .callout-jump { display: block; margin: 14px 0 6px; padding: 12px 16px; border-radius: 12px; background: #fef2f2; border: 1px solid #fca5a5; color: #b91c1c; font-size: .95rem; }
+    .callout-jump:hover { background: #fee2e2; text-decoration: none; }
+    @media print { .callout { box-shadow: none; } .callout-jump { display: none; } }
     .site-footer { background: #0f172a; color: #cbd5e1; padding: 28px 0; font-size: .88rem; text-align: center; }
     .site-footer a { color: #cbd5e1; }
     .site-footer p { margin: 4px 0; }
@@ -163,6 +174,20 @@
             <a href="#video-to-checklist-maker">
               <span class="app-icon" style="background:#e11d48" aria-hidden="true">VC</span>
               <span><strong>Video to Checklist Maker</strong><small>Android · Productividad</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#escaner-facturas-y-procesos">
+              <span class="app-icon" style="background:#ea580c" aria-hidden="true">EF</span>
+              <span><strong>Escáner Facturas y Procesos</strong><small>Android · Negocios</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#gestor-carga-y-paneles">
+              <span class="app-icon" style="background:#ca8a04" aria-hidden="true">CP</span>
+              <span><strong>Gestor Carga y Paneles</strong><small>Android · Herramientas</small></span>
               <span class="arrow" aria-hidden="true">→</span>
             </a>
           </li>
@@ -394,6 +419,8 @@
             <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
           </p>
 
+          <a class="callout-jump" href="#recordatorio-de-pastillas" data-target="rp-eliminar-datos">🗑️ ¿Quieres borrar tus datos? Ve directo a la <strong>Sección 10: Conservación y eliminación de tus datos</strong> →</a>
+
           <p>Esta Política de Privacidad describe cómo la aplicación móvil "Recordatorio de Pastillas" ("la App") trata la información de las personas que la usan. Al descargar, instalar o usar la App, aceptas las prácticas descritas en este documento.</p>
 
           <h3>1. Responsable de la aplicación</h3>
@@ -462,7 +489,12 @@
           </ul>
           <p>Ninguna transmisión ni almacenamiento de datos es 100% seguro; hacemos un esfuerzo razonable por proteger tu información, pero no podemos garantizar una seguridad absoluta.</p>
 
-          <h3>10. Conservación y eliminación de tus datos</h3>
+          <section class="callout" id="rp-eliminar-datos" aria-labelledby="rp-eliminar-titulo">
+            <div class="callout-head">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6M14 11v6"/></svg>
+              <h3 id="rp-eliminar-titulo">10. Conservación y eliminación de tus datos</h3>
+            </div>
+            <p class="callout-lead"><strong>Tú tienes el control total:</strong> puedes borrar tus datos en cualquier momento, sin pedírselo a nadie.</p>
           <p>Como toda tu información vive únicamente en tu dispositivo, tú tienes el control directo sobre ella:</p>
           <ul>
             <li>Puedes eliminar medicamentos, videos o registros individuales desde las pantallas correspondientes del Modo Cuidador.</li>
@@ -470,6 +502,7 @@
             <li>Al desinstalar la App, se elimina de forma permanente toda la información almacenada localmente (medicamentos, fotos, videos, PIN, historial).</li>
           </ul>
           <p>Al no existir un servidor propio, no conservamos copias de esta información fuera de tu dispositivo que puedan ser objeto de una solicitud de eliminación remota.</p>
+          </section>
 
           <h3>11. Tus derechos</h3>
           <p>Dependiendo de tu país o región (por ejemplo, bajo el Reglamento General de Protección de Datos de la Unión Europea, u otras leyes locales de protección de datos), puedes tener derecho a acceder, rectificar, eliminar u oponerte al tratamiento de tu información. Dado que la información de medicamentos, fotos, videos y PIN reside únicamente en tu dispositivo, puedes ejercer estos derechos directamente desde la propia App o desde los ajustes de tu dispositivo, como se describe en la sección 10. Para todo lo relacionado con la información procesada por el SDK de publicidad de Google, puedes ejercer tus derechos y preferencias desde la sección de privacidad de anuncios descrita en la sección 6, o directamente ante Google. Si tienes cualquier otra duda o solicitud, puedes escribirnos al correo de contacto indicado en la sección 1.</p>
@@ -692,6 +725,199 @@
           </div>
         </article>
 
+        <!-- =====================================================================
+             APP: Escáner Facturas y Procesos
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#escaner-facturas-y-procesos
+             ===================================================================== -->
+        <article class="policy" id="escaner-facturas-y-procesos">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#ea580c" aria-hidden="true">EF</span>
+            <h2>Política de Privacidad<span>Escáner Facturas y Procesos</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Fecha de última actualización:</strong> 25 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <h3>1. Introducción</h3>
+          <p>Esta Política de Privacidad describe cómo la aplicación "Escáner Facturas y Procesos" (en adelante, "la App"), desarrollada por Emmanuel Vargas (en adelante, "el Desarrollador"), recopila, utiliza, almacena y protege la información de sus usuarios. Al descargar, instalar o utilizar la App, el usuario acepta las prácticas descritas en este documento.</p>
+
+          <h3>2. Datos que recopila la App</h3>
+          <h4>2.1 Datos que permanecen en el dispositivo del usuario</h4>
+          <p>La App está diseñada para funcionar principalmente de forma local, sin enviar la información personal del usuario a servidores del Desarrollador. En concreto:</p>
+          <ul>
+            <li><strong>Fotografías y documentos escaneados de facturas:</strong> el usuario captura o selecciona imágenes de facturas mediante la cámara del sistema o la galería del dispositivo. Estas imágenes se procesan y almacenan únicamente en el propio dispositivo.</li>
+            <li><strong>Texto extraído por reconocimiento óptico de caracteres (OCR):</strong> la App utiliza la tecnología ML Kit de Google para reconocer texto en las imágenes de facturas. Este reconocimiento se realiza 100% en el dispositivo, una vez descargado el modelo de OCR correspondiente; las imágenes y el texto extraído no se envían a ningún servidor externo para su procesamiento.</li>
+            <li><strong>Datos de facturas validadas:</strong> montos, fechas, proveedores y demás campos que el usuario confirma o edita tras el escaneo, guardados en una base de datos local del dispositivo.</li>
+            <li><strong>Manuales de procedimientos (SOP):</strong> los procedimientos, pasos, imágenes y demás contenido que el usuario cree con el generador de manuales, almacenados localmente y, si el usuario lo decide, exportados como archivo PDF.</li>
+            <li><strong>Archivos exportados:</strong> documentos PDF y archivos Excel/CSV generados por el usuario a partir de sus facturas o manuales, guardados en el almacenamiento del dispositivo y compartidos únicamente cuando el propio usuario elige la opción de compartir.</li>
+            <li><strong>Preferencia de idioma:</strong> el idioma seleccionado por el usuario en el menú de ajustes, guardado localmente en el dispositivo.</li>
+          </ul>
+          <p>Ninguno de estos datos se transmite, respalda ni sincroniza con servidores propiedad del Desarrollador, ya que la App no cuenta con cuentas de usuario, inicio de sesión ni almacenamiento en la nube propio.</p>
+
+          <h4>2.2 Datos recopilados por servicios de terceros</h4>
+          <p>La App utiliza los siguientes servicios de terceros, que pueden recopilar información de forma independiente conforme a sus propias políticas de privacidad:</p>
+          <ul>
+            <li><strong>Google ML Kit (reconocimiento de texto):</strong> requiere conexión a internet únicamente para descargar, una sola vez, el modelo de reconocimiento de texto en el dispositivo. Después de esa descarga inicial, el reconocimiento funciona sin conexión y no se transmite ninguna imagen ni texto reconocido a los servidores de Google.</li>
+            <li><strong>Google AdMob (publicidad):</strong> la App muestra anuncios publicitarios en formato banner suministrados por Google AdMob. Para ello, AdMob puede recopilar identificadores de publicidad, dirección IP, información del dispositivo y datos de interacción con los anuncios, con el fin de mostrar publicidad y, en su caso, personalizarla. Esta recopilación se rige por la Política de Privacidad de Google, disponible en: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>. El usuario puede gestionar la personalización de anuncios desde los ajustes de privacidad de su cuenta de Google y desde los ajustes de anuncios de su dispositivo Android.</li>
+          </ul>
+          <p>El Desarrollador no tiene acceso directo a los datos que Google recopila a través de AdMob ni de ML Kit; dicha información es gestionada exclusivamente por Google conforme a sus propias políticas.</p>
+
+          <h3>3. Permisos utilizados por la App</h3>
+          <ul>
+            <li><strong>Internet:</strong> utilizado únicamente para la descarga del modelo de OCR de ML Kit y para la carga de anuncios de AdMob.</li>
+            <li><strong>Almacenamiento (solo en Android 9 o versiones anteriores):</strong> permite guardar y acceder a archivos exportados. En Android 10 en adelante, la App utiliza almacenamiento con ámbito (scoped storage) a través de MediaStore, por lo que no requiere este permiso.</li>
+            <li><strong>Cámara (opcional, mediante la app de cámara del sistema):</strong> la App no accede directamente a la cámara del dispositivo; delega la captura de fotografías a la aplicación de cámara nativa del sistema operativo mediante una solicitud estándar de Android. El usuario también puede seleccionar imágenes ya existentes desde su galería.</li>
+          </ul>
+
+          <h3>4. Uso de la información</h3>
+          <p>La información recopilada localmente se utiliza exclusivamente para:</p>
+          <ul>
+            <li>Permitir el escaneo, reconocimiento y validación de datos de facturas.</li>
+            <li>Generar y almacenar manuales de procedimientos (SOP).</li>
+            <li>Exportar y compartir documentos (PDF, Excel/CSV) a solicitud del usuario.</li>
+            <li>Recordar la preferencia de idioma configurada por el usuario.</li>
+            <li>Mostrar publicidad a través de Google AdMob.</li>
+          </ul>
+          <p>El Desarrollador no vende, alquila ni comparte la información personal de los usuarios con terceros para fines comerciales ajenos a los descritos en esta política.</p>
+
+          <h3>5. Almacenamiento, conservación y eliminación de datos</h3>
+          <p>Todos los datos generados por el uso de la App (facturas, manuales, archivos exportados, configuración) se almacenan exclusivamente en el dispositivo del usuario mientras la App permanezca instalada. El usuario puede eliminar esta información en cualquier momento:</p>
+          <ul>
+            <li>Borrando facturas o manuales individuales desde las funciones propias de la App.</li>
+            <li>Borrando los datos y la caché de la App desde los ajustes del sistema Android.</li>
+            <li>Desinstalando la App, lo que elimina de forma permanente todos los datos almacenados localmente.</li>
+          </ul>
+          <p>Al no existir un servidor del Desarrollador que reciba o respalde esta información, no se conserva copia alguna fuera del dispositivo del usuario.</p>
+
+          <h3>6. Seguridad</h3>
+          <p>El Desarrollador aplica las prácticas recomendadas por Android para proteger la información del usuario, incluyendo el uso de almacenamiento con ámbito (scoped storage) y de un proveedor de archivos seguro (FileProvider) para compartir documentos sin conceder permisos globales de acceso. No obstante, ningún sistema es completamente infalible, por lo que no se puede garantizar una seguridad absoluta.</p>
+
+          <h3>7. Privacidad de menores</h3>
+          <p>La App no está dirigida a menores de 13 años y no recopila conscientemente información personal de menores. Si el Desarrollador tuviera conocimiento de que un menor ha proporcionado información personal a través de servicios de terceros integrados en la App, tomará las medidas necesarias para eliminar dicha información en la medida en que ello sea posible.</p>
+
+          <h3>8. Derechos del usuario</h3>
+          <p>Dado que la App no recopila ni almacena datos personales en servidores propios, el usuario mantiene en todo momento el control total de su información, pudiendo consultarla, modificarla o eliminarla directamente desde el dispositivo, tal como se describe en la sección 5. Para cualquier consulta relacionada con los datos recopilados por servicios de terceros (Google AdMob), el usuario puede además dirigirse directamente a Google a través de sus canales oficiales.</p>
+
+          <h3>9. Cambios en esta Política de Privacidad</h3>
+          <p>El Desarrollador podrá actualizar esta Política de Privacidad ocasionalmente para reflejar cambios en la App o en la normativa aplicable. Se recomienda al usuario revisar este documento periódicamente. La fecha de la última actualización se indica al inicio de este documento.</p>
+
+          <h3>10. Contacto</h3>
+          <p>Para preguntas, comentarios o solicitudes relacionadas con esta Política de Privacidad, el usuario puede contactar al Desarrollador en:<br>
+            <strong>Emmanuel Vargas</strong><br>
+            Correo electrónico: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="escaner-facturas-y-procesos">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: Gestor Carga y Paneles
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#gestor-carga-y-paneles
+             ===================================================================== -->
+        <article class="policy" id="gestor-carga-y-paneles">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#ca8a04" aria-hidden="true">CP</span>
+            <h2>Política de Privacidad<span>Gestor Carga y Paneles</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 25 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <h3>1. Introducción</h3>
+          <p>Esta Política de Privacidad describe cómo Gestor Carga y Paneles ("la App") maneja la información de sus usuarios. Esta App fue desarrollada por Emmanuel Vargas ("el Desarrollador", "nosotros"). Si tiene preguntas sobre esta política, puede contactarnos en <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>.</p>
+          <p>Al descargar, instalar o usar la App, usted acepta las prácticas descritas en este documento.</p>
+
+          <h3>2. Resumen</h3>
+          <p>Gestor Carga y Paneles es una aplicación de gestión de mantenimiento de sistemas de energía (inversores, baterías, paneles solares) y de registro de recargas de vehículos eléctricos, diseñada para funcionar principalmente de forma local y sin conexión a internet. Toda la información que usted ingresa (equipos, mantenimientos, cargas, tarifas) se guarda únicamente en su propio dispositivo, en una base de datos local. El Desarrollador no opera ningún servidor propio que reciba, almacene o procese esa información.</p>
+          <p>La única función de la App que requiere conexión a internet es la visualización de anuncios publicitarios (ver sección 4).</p>
+
+          <h3>3. Información que NO recopilamos</h3>
+          <p>El Desarrollador no recopila, no transmite y no tiene acceso a los siguientes datos que usted introduce en la App:</p>
+          <ul>
+            <li>Datos de sus equipos (inversor, banco de baterías, paneles solares, vehículo eléctrico, u otros), incluyendo marca, modelo, fecha de instalación y vida útil.</li>
+            <li>Historial de mantenimientos realizados.</li>
+            <li>Registros de recargas de vehículo eléctrico (kWh consumidos, costos, fechas).</li>
+            <li>Tarifas personalizadas que usted configure.</li>
+            <li>Recordatorios y alarmas que programe.</li>
+          </ul>
+          <p>Toda esta información permanece almacenada exclusivamente en la memoria de su propio dispositivo mediante una base de datos local (Room) y no sale de él, salvo que usted mismo decida exportarla (ver sección 6).</p>
+
+          <h3>4. Publicidad (Google AdMob)</h3>
+          <p>La App muestra un banner publicitario en la parte inferior de la pantalla, proporcionado por Google AdMob, un servicio de publicidad de Google LLC. Esta es la única parte de la App que se comunica con servidores externos.</p>
+
+          <h4>4.1 Datos que Google AdMob puede recopilar</h4>
+          <p>Para mostrar anuncios (incluyendo, si usted lo autoriza, anuncios personalizados), Google y sus socios publicitarios pueden recopilar y procesar:</p>
+          <ul>
+            <li>El identificador de publicidad de su dispositivo (Advertising ID).</li>
+            <li>Dirección IP y datos generales del dispositivo (modelo, sistema operativo, idioma, zona horaria).</li>
+            <li>Información sobre interacciones con los anuncios (impresiones, clics).</li>
+            <li>Datos aproximados de ubicación (a nivel de país/región, derivados de la IP).</li>
+          </ul>
+          <p>Esta información es recopilada y procesada por Google, no por el Desarrollador. El Desarrollador no tiene acceso a datos personales identificables de los usuarios a través de este proceso.</p>
+
+          <h4>4.2 Consentimiento (UMP / RGPD / CCPA)</h4>
+          <p>Antes de mostrar cualquier anuncio, la App ejecuta el flujo de consentimiento de Google User Messaging Platform (UMP). Dependiendo de su ubicación (por ejemplo, Espacio Económico Europeo, Reino Unido, o ciertos estados de EE. UU. bajo CCPA/CPRA), se le presentará un mensaje para que usted otorgue o rechace su consentimiento para el uso de datos personales con fines publicitarios, incluyendo la opción de recibir únicamente anuncios no personalizados.</p>
+          <p>Usted puede modificar sus preferencias de consentimiento en cualquier momento a través de las opciones que la propia App o el mensaje de privacidad le ofrezcan.</p>
+
+          <h4>4.3 Política de privacidad de Google</h4>
+          <p>El uso de Google AdMob está sujeto también a la Política de Privacidad de Google, disponible en: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+          <p>Puede obtener más información sobre cómo Google utiliza los datos en aplicaciones que usan sus servicios en: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></p>
+
+          <h4>4.4 Permiso de INTERNET</h4>
+          <p>La App solicita los permisos <code>INTERNET</code> y <code>ACCESS_NETWORK_STATE</code> exclusivamente para poder solicitar y mostrar el banner publicitario descrito arriba. Ninguna otra funcionalidad de la App utiliza estos permisos.</p>
+
+          <h3>5. Otros permisos que solicita la App</h3>
+          <p>La App puede solicitar los siguientes permisos del sistema Android, todos utilizados únicamente en el propio dispositivo y sin envío de información a servidores externos:</p>
+          <ul>
+            <li><strong>Notificaciones (<code>POST_NOTIFICATIONS</code>):</strong> para mostrarle recordatorios locales cuando llega la fecha de un mantenimiento programado.</li>
+            <li><strong>Alarmas exactas (<code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code>):</strong> para que los recordatorios de mantenimiento lleguen en la fecha y hora programadas. Si no concede este permiso, la App sigue funcionando con alarmas aproximadas.</li>
+            <li><strong>Inicio del sistema (<code>RECEIVE_BOOT_COMPLETED</code>):</strong> para volver a programar sus recordatorios activos después de que reinicie su dispositivo, ya que el sistema operativo los elimina al apagarse.</li>
+          </ul>
+          <p>Ninguno de estos permisos implica el envío de datos a internet ni a el Desarrollador.</p>
+
+          <h3>6. Copias de seguridad y exportación de datos</h3>
+          <ul>
+            <li>La App permite exportar manualmente su información (equipos, mantenimientos, cargas, tarifas) a un archivo <code>.zip</code> que usted mismo elige dónde guardar, usando el sistema de archivos de su dispositivo o servicios de almacenamiento que usted mismo configure (por ejemplo, Google Drive, si así lo decide al guardar el archivo). Esta exportación es iniciada y controlada enteramente por usted.</li>
+            <li>La App es compatible con la función de copia de seguridad automática de Android (<code>allowBackup</code>), que puede respaldar la base de datos local de la App en la cuenta de Google del propio usuario, conforme a los mecanismos estándar de Android. Este respaldo es gestionado por Google/Android como parte del sistema operativo, no por un servidor propio del Desarrollador.</li>
+          </ul>
+
+          <h3>7. Almacenamiento y seguridad de los datos</h3>
+          <p>Toda la información introducida en la App (fuera de lo descrito en la sección 4) se almacena localmente en el dispositivo del usuario mediante bases de datos y preferencias locales estándar de Android. El Desarrollador no mantiene servidores, bases de datos remotas ni copias de esta información. La seguridad de los datos almacenados localmente depende de las medidas de seguridad del propio dispositivo del usuario (bloqueo de pantalla, cifrado del dispositivo, etc.).</p>
+
+          <h3>8. Privacidad de menores</h3>
+          <p>La App no está dirigida a menores de 13 años y no recopila deliberadamente información personal de menores. Si usted es padre, madre o tutor y cree que un menor a su cargo nos ha proporcionado información personal a través de servicios de terceros integrados en la App (sección 4), contáctenos para solicitar su eliminación.</p>
+
+          <h3>9. Sus derechos</h3>
+          <p>Dado que la información principal de la App (equipos, mantenimientos, cargas, tarifas) se almacena únicamente en su dispositivo, usted tiene control total sobre ella: puede verla, modificarla, exportarla o eliminarla en cualquier momento desde la propia App o desinstalando la aplicación.</p>
+          <p>Respecto a los datos procesados por Google AdMob (sección 4), usted puede:</p>
+          <ul>
+            <li>Gestionar o revocar su consentimiento de personalización de anuncios a través del mensaje de privacidad de la App.</li>
+            <li>Restablecer o desactivar su identificador de publicidad desde la configuración de privacidad de su dispositivo Android (<code>Ajustes &gt; Google &gt; Anuncios</code>).</li>
+            <li>Ejercer sus derechos de acceso, rectificación, eliminación u oposición sobre los datos que Google procese, directamente con Google, conforme a su política de privacidad.</li>
+          </ul>
+
+          <h3>10. Cambios a esta Política de Privacidad</h3>
+          <p>Esta Política de Privacidad puede actualizarse periódicamente para reflejar cambios en la funcionalidad de la App o en requisitos legales. Se indicará la fecha de la última actualización al inicio de este documento. Le recomendamos revisarla periódicamente.</p>
+
+          <h3>11. Contacto</h3>
+          <p>Si tiene preguntas, comentarios o solicitudes relacionadas con esta Política de Privacidad o con el manejo de datos en Gestor Carga y Paneles, puede contactar al desarrollador en:<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="gestor-carga-y-paneles">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
         <!-- PLANTILLA PARA UNA APP NUEVA:
              1) Copia el bloque <article class="policy" id="...">...</article> de arriba.
              2) Cambia el id (ej. id="mi-app"): será la URL .../politicas/#mi-app
@@ -736,6 +962,14 @@
         e.preventDefault();
         history.pushState('', document.title, location.pathname + location.search);
         route();
+      });
+
+      document.querySelectorAll('.callout-jump').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          var t = document.getElementById(a.dataset.target);
+          if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
       });
 
       document.querySelectorAll('.copy-link').forEach(function (btn) {
