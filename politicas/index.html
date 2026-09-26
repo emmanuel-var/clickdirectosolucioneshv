@@ -85,6 +85,12 @@
     .callout-jump { display: block; margin: 14px 0 6px; padding: 12px 16px; border-radius: 12px; background: #fef2f2; border: 1px solid #fca5a5; color: #b91c1c; font-size: .95rem; }
     .callout-jump:hover { background: #fee2e2; text-decoration: none; }
     @media print { .callout { box-shadow: none; } .callout-jump { display: none; } }
+
+    /* Tablas dentro de una política */
+    .policy-table-wrap { overflow-x: auto; margin: 12px 0 16px; }
+    .policy-table { width: 100%; border-collapse: collapse; font-size: .93rem; min-width: 460px; }
+    .policy-table th, .policy-table td { text-align: left; padding: 10px 12px; border: 1px solid var(--border); vertical-align: top; color: #334155; }
+    .policy-table th { background: var(--bg-alt); color: var(--text); }
     .site-footer { background: #0f172a; color: #cbd5e1; padding: 28px 0; font-size: .88rem; text-align: center; }
     .site-footer a { color: #cbd5e1; }
     .site-footer p { margin: 4px 0; }
@@ -251,6 +257,62 @@
             <a href="#ventas-e-inventario-pos">
               <span class="app-icon" style="background:#0f766e;font-size:.8rem" aria-hidden="true">POS</span>
               <span><strong>Ventas e Inventario POS</strong><small>Android · Negocios</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#resumen-de-contratos-pdf">
+              <span class="app-icon" style="background:#1d4ed8" aria-hidden="true">RC</span>
+              <span><strong>Resumen de Contratos PDF</strong><small>Android · Productividad</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#limpiador-de-datos-csv-json">
+              <span class="app-icon" style="background:#15803d" aria-hidden="true">LD</span>
+              <span><strong>Limpiador de Datos CSV JSON</strong><small>Android · Herramientas</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#cinta-metrica-camara-3d">
+              <span class="app-icon" style="background:#f59e0b" aria-hidden="true">3D</span>
+              <span><strong>Cinta Métrica Cámara 3D</strong><small>Android · Herramientas</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#textrpgseed">
+              <span class="app-icon" style="background:#7c2d12;font-size:.8rem" aria-hidden="true">RPG</span>
+              <span><strong>TextRPGSeed</strong><small>Android · Juego de rol</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#ubicamemo-notas-gps">
+              <span class="app-icon" style="background:#16a34a" aria-hidden="true">UM</span>
+              <span><strong>Ubicamemo Notas GPS</strong><small>Android · Productividad</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#countdown-dias-faltantes-pro">
+              <span class="app-icon" style="background:#6d28d9" aria-hidden="true">CD</span>
+              <span><strong>Countdown Días Faltantes Pro</strong><small>Android · Productividad</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#chat-de-notas-flotante">
+              <span class="app-icon" style="background:#0ea5e9" aria-hidden="true">CN</span>
+              <span><strong>Chat de Notas Flotante</strong><small>Android · Productividad</small></span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#calculadora-pectina-frutas">
+              <span class="app-icon" style="background:#e11d48" aria-hidden="true">PF</span>
+              <span><strong>Calculadora Pectina Frutas</strong><small>Android · Comida y bebida</small></span>
               <span class="arrow" aria-hidden="true">→</span>
             </a>
           </li>
@@ -1883,6 +1945,704 @@
 
           <div class="policy-actions">
             <button class="pill copy-link" type="button" data-id="ventas-e-inventario-pos">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: Resumen de Contratos PDF
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#resumen-de-contratos-pdf
+             ===================================================================== -->
+        <article class="policy" id="resumen-de-contratos-pdf">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#1d4ed8" aria-hidden="true">RC</span>
+            <h2>Política de Privacidad<span>Resumen de Contratos PDF</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 26 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <p>Resumen de Contratos PDF ("la app") está diseñada bajo el principio de <strong>"tu contrato se queda en tu dispositivo"</strong>: el análisis de documentos nunca sale de tu teléfono. La app muestra anuncios (Google AdMob) para sostenerse, lo cual sí implica el uso de red y el uso de datos por parte de Google — ver la sección 3. Esta política describe qué información maneja la app y cómo.</p>
+
+          <h3>1. Qué datos procesa la app</h3>
+          <ul>
+            <li>Fotos que tomas con la cámara de contratos físicos.</li>
+            <li>Archivos PDF que eliges subir desde tu dispositivo.</li>
+            <li>El texto extraído de esas fotos/PDFs (mediante reconocimiento óptico de caracteres) y el resumen generado a partir de ese texto.</li>
+          </ul>
+
+          <h3>2. Dónde se procesan y almacenan esos datos</h3>
+          <p>Todo el procesamiento ocurre localmente, en tu teléfono:</p>
+          <ul>
+            <li>El reconocimiento de texto (OCR) usa Google ML Kit en su modalidad on-device: las imágenes nunca se envían a un servidor.</li>
+            <li>El resumen se genera con un motor de reglas que corre en tu teléfono, o —si tú decides activarlo e importar un modelo— con un modelo de inteligencia artificial que también corre completamente en tu teléfono (MediaPipe LLM Inference), sin conexión a internet.</li>
+            <li>El historial de contratos y sus resúmenes se guarda en una base de datos local (SQLite/Room) dentro del almacenamiento privado de la app.</li>
+          </ul>
+          <p>La app no tiene servidores propios y nunca envía tus contratos —fotos, PDFs, texto extraído o resúmenes— a ningún servicio en la nube ni los comparte con terceros. Esto aplica específicamente al contenido de tus contratos; la sección 3 describe el único otro uso de red que tiene la app (anuncios).</p>
+
+          <h3>3. Anuncios (Google AdMob)</h3>
+          <p>La app muestra un banner publicitario provisto por Google AdMob. Este es el único componente de la app que usa conexión a internet y comparte información con un tercero (Google) — el análisis de tus contratos, descrito arriba, no se ve afectado por esto en absoluto.</p>
+          <ul>
+            <li>AdMob puede recopilar el identificador de publicidad de tu dispositivo y datos técnicos (modelo de dispositivo, versión de Android, aproximación de ubicación por IP) para mostrar anuncios y medir su rendimiento.</li>
+            <li>Antes de mostrar cualquier anuncio, la app usa el SDK de User Messaging Platform (UMP) de Google para solicitar tu consentimiento cuando la ley aplicable lo exige (por ejemplo, si te encuentras en el Espacio Económico Europeo o el Reino Unido, bajo GDPR). Puedes revisar o retirar ese consentimiento en cualquier momento desde <code>Configuración → Privacidad</code>, cuando esa opción esté disponible para tu región.</li>
+            <li>El tratamiento que Google hace de estos datos se rige por la Política de Privacidad de Google (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>) y, específicamente para anuncios, por sus políticas de publicidad (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a>).</li>
+          </ul>
+
+          <h3>4. Permisos que solicita la app</h3>
+          <ul>
+            <li><strong>Cámara:</strong> únicamente para fotografiar el contrato que quieres analizar. Puedes negar este permiso y seguir usando la app para subir PDFs.</li>
+            <li><strong>Selector de archivos del sistema:</strong> para elegir un PDF desde tu dispositivo; no otorga a la app acceso a otros archivos.</li>
+            <li><strong>Internet:</strong> utilizado exclusivamente para solicitar y mostrar los anuncios descritos en la sección 3. Ninguna otra función de la app lo necesita ni lo usa.</li>
+          </ul>
+
+          <h3>5. Control sobre tus datos</h3>
+          <ul>
+            <li>Puedes eliminar cualquier contrato individual desde la pantalla de Resultados, o borrar todo tu historial desde <code>Configuración → "Borrar todo el historial"</code>.</li>
+            <li>Desinstalar la app elimina de forma permanente toda la información almacenada, ya que no existe una copia en ningún servidor externo.</li>
+          </ul>
+
+          <h3>6. Modelo de IA local opcional</h3>
+          <p>Si decides importar un modelo de lenguaje (por ejemplo, Gemma en formato <code>.task</code>) desde Configuración, el archivo se copia únicamente al almacenamiento privado de la app en tu dispositivo. La app no descarga modelos automáticamente ni los sube a ningún lugar.</p>
+
+          <h3>7. Menores de edad</h3>
+          <p>La app no está dirigida a menores de edad y no recopila intencionalmente información de menores, en la medida en que no recopila información de ningún usuario más allá de lo descrito arriba.</p>
+
+          <h3>8. Cambios a esta política</h3>
+          <p>Si esta política cambia, la fecha de "Última actualización" al inicio de este documento se actualizará junto con una nueva versión de la app.</p>
+
+          <h3>9. Contacto</h3>
+          <p>Si tienes preguntas sobre esta política de privacidad o sobre el manejo de tus datos, puedes escribir a: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="resumen-de-contratos-pdf">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: Limpiador de Datos CSV JSON
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#limpiador-de-datos-csv-json
+             ===================================================================== -->
+        <article class="policy" id="limpiador-de-datos-csv-json">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#15803d" aria-hidden="true">LD</span>
+            <h2>Política de Privacidad<span>Limpiador de Datos CSV JSON</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 26 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <p>Limpiador de Datos CSV JSON ("la app") fue creada para procesar archivos CSV y JSON exclusivamente en el dispositivo del usuario. Esta política explica, en términos simples, qué datos toca la app y qué hace (y qué no hace) con ellos.</p>
+
+          <h3>1. Qué datos procesa la app</h3>
+          <p>Cuando eliges un archivo CSV o JSON con el selector del sistema (o lo compartes a la app desde otra aplicación), la app lee su contenido únicamente para:</p>
+          <ul>
+            <li>Mostrarte una vista previa y un diagnóstico rápido (primeras filas, columnas, valores vacíos, tipos de dato detectados).</li>
+            <li>Aplicar las reglas de limpieza que tú configuras (eliminar duplicados, filas vacías, formateo de texto, validaciones, expresiones regulares, etc.).</li>
+            <li>Generar el archivo limpio en los formatos que elijas exportar (CSV y/o JSON) y, si aplica, un informe de errores de validación.</li>
+          </ul>
+
+          <h3>2. Dónde se procesan y almacenan tus datos</h3>
+          <p><strong>En ningún momento el contenido de tus archivos sale de tu dispositivo.</strong> La app:</p>
+          <ul>
+            <li>No tiene servidores propios ni de terceros a los que envíe el contenido de tus archivos CSV/JSON.</li>
+            <li>No integra SDKs de analítica ni de "crash reporting" de terceros.</li>
+            <li>Guarda el resultado procesado temporalmente en el almacenamiento privado de la app (caché interna), solo para permitirte exportarlo; ese archivo temporal se reemplaza en cada nuevo procesamiento y es inaccesible para otras apps.</li>
+            <li>Accede a tus archivos únicamente a través del selector del sistema operativo (Storage Access Framework): tú eliges explícitamente qué archivo abrir y dónde guardar cada exportación. La app no explora ni accede a otras carpetas de tu dispositivo.</li>
+          </ul>
+
+          <h3>3. "Recetas" de limpieza guardadas</h3>
+          <p>Si guardas una configuración de limpieza con un nombre ("receta") para reutilizarla, esa configuración (qué reglas aplicar, no el contenido de tus archivos) se guarda localmente en el dispositivo mediante Android DataStore. Nunca se sincroniza a ningún servidor ni se comparte con nadie.</p>
+
+          <h3>4. Anuncios (Google AdMob)</h3>
+          <p>La app es gratuita y muestra un banner de anuncios en la parte inferior de la pantalla, provisto por Google AdMob. Este es el único componente de la app que usa conexión a internet; el contenido de tus archivos CSV/JSON nunca pasa por este servicio ni por ningún otro.</p>
+          <ul>
+            <li>Para poder mostrar anuncios, Google (a través del SDK de Google Mobile Ads) puede recopilar identificadores de publicidad del dispositivo (como el Advertising ID), dirección IP aproximada y datos técnicos del anuncio (impresiones, clics), con fines de publicidad y medición. Esta app no controla ni almacena esos datos: los procesa Google conforme a su propia Política de Privacidad (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>) y a los términos de AdMob (<a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">https://support.google.com/admob/answer/6128543</a>).</li>
+            <li>Antes de mostrar anuncios, la app solicita tu consentimiento cuando la ley aplicable lo exige (por ejemplo, en el Espacio Económico Europeo y el Reino Unido) mediante el formulario estándar de Google User Messaging Platform (UMP), basado en el marco de transparencia y consentimiento IAB (TCF). Puedes cambiar tu elección de consentimiento en cualquier momento desde la pantalla de Configuración de la app.</li>
+            <li>No se muestran anuncios dirigidos específicamente a niños ni contenido inapropiado para audiencias generales; los anuncios los selecciona y sirve Google.</li>
+          </ul>
+
+          <h3>5. Permisos que solicita la app y por qué</h3>
+          <ul>
+            <li><strong>Internet (<code>INTERNET</code>):</strong> descargar el banner de anuncios de Google AdMob. No se usa para el contenido de tus archivos.</li>
+            <li><strong>Estado de la red (<code>ACCESS_NETWORK_STATE</code>):</strong> usado por el SDK de anuncios para comprobar la conectividad antes de solicitar un anuncio.</li>
+            <li><strong>Notificaciones (<code>POST_NOTIFICATIONS</code>):</strong> mostrar el progreso de la limpieza mientras se procesa un archivo, especialmente archivos grandes.</li>
+            <li><strong>Servicio en primer plano (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code>):</strong> evitar que Android interrumpa el procesamiento de archivos grandes si cambias de app.</li>
+          </ul>
+          <p>La app no solicita permisos de almacenamiento amplios, ubicación, cámara, micrófono, contactos ni ningún otro dato personal.</p>
+
+          <h3>6. Datos compartidos con terceros</h3>
+          <p>El contenido de tus archivos CSV/JSON nunca se comparte con nadie. El único tercero con el que la app comparte datos es Google AdMob, y únicamente los datos técnicos de publicidad descritos en la sección 4, necesarios para mostrar el banner de anuncios.</p>
+
+          <h3>7. Menores de edad</h3>
+          <p>La app no está dirigida a menores de edad. No recopilamos intencionalmente información de menores; en particular, no configuramos los anuncios como dirigidos a audiencias infantiles.</p>
+
+          <h3>8. Cambios a esta política</h3>
+          <p>Si en el futuro se agrega alguna funcionalidad que cambie este comportamiento (por ejemplo, sincronización opcional en la nube), esta política se actualizará antes de publicar esa actualización, y se notificará dentro de la app.</p>
+
+          <h3>9. Contacto</h3>
+          <p>Para preguntas sobre esta política de privacidad, contacta a:<br>
+            <strong>Emmanuel Vargas</strong> — <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="limpiador-de-datos-csv-json">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: Cinta Métrica Cámara 3D
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#cinta-metrica-camara-3d
+             ===================================================================== -->
+        <article class="policy" id="cinta-metrica-camara-3d">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#f59e0b" aria-hidden="true">3D</span>
+            <h2>Política de Privacidad<span>Cinta Métrica Cámara 3D</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 26 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <p>Cinta Métrica Cámara 3D ("la app") ha sido diseñada para que todas sus funciones de medición, planos y exportación funcionen completamente en el dispositivo del usuario, sin conexión a internet. La única excepción es el anuncio publicitario en banner descrito en la sección "Publicidad" más abajo.</p>
+
+          <h3>Datos que la app utiliza</h3>
+          <ul>
+            <li><strong>Cámara:</strong> se usa exclusivamente para mostrar la vista en vivo y ejecutar la detección de superficies (ARCore) y el ajuste de puntos a esquinas ("Visión Espacial Local"). Ninguna imagen ni video se almacena, se envía a internet ni se comparte con terceros. El procesamiento de imagen ocurre enteramente en el dispositivo.</li>
+            <li><strong>Sensores de movimiento (acelerómetro / magnetómetro / vector de rotación):</strong> se usan para el Clinómetro Inercial (nivel de burbuja y medidor de pendientes). No se almacenan ni se transmiten.</li>
+            <li><strong>Datos de proyectos y mediciones</strong> (nombres de obra, cliente, dirección, coordenadas de vértices, notas): se guardan únicamente en la base de datos local del dispositivo (Room/SQLite), dentro del almacenamiento privado de la app. Nunca se envían a servidores externos porque la app no tiene funcionalidad de red para estos fines.</li>
+          </ul>
+
+          <h3>Publicidad</h3>
+          <p>La app muestra un anuncio en formato banner en la parte inferior de la pantalla, servido por Google AdMob. Para ello se usan dos SDKs de Google: Google Mobile Ads SDK (carga y muestra el anuncio) y User Messaging Platform, UMP (formulario de consentimiento de privacidad).</p>
+          <p>Antes de solicitar cualquier anuncio, la app pide el consentimiento del usuario mediante el formulario de UMP cuando la normativa de su región lo requiere (por ejemplo, usuarios del Espacio Económico Europeo o Reino Unido, en cumplimiento del RGPD/GDPR).</p>
+          <p>Según el consentimiento otorgado, AdMob puede usar un identificador de publicidad del dispositivo y otros datos técnicos, conforme a la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a> y a la información sobre los <a href="https://support.google.com/admob/answer/9012903" target="_blank" rel="noopener">socios publicitarios de Google</a>, para mostrar anuncios personalizados o no personalizados.</p>
+          <p>El usuario puede revisar o cambiar su consentimiento de anuncios desde el formulario que ofrece la app cuando corresponde, o gestionando los permisos de publicidad de su dispositivo Android.</p>
+          <p><strong>La app no comparte con AdMob ningún dato de los proyectos, mediciones o reportes del usuario:</strong> solo el SDK de anuncios se comunica con los servidores de Google para solicitar y mostrar el banner.</p>
+
+          <h3>Datos que la app NO recolecta</h3>
+          <p>Más allá de lo necesario para mostrar el banner publicitario descrito arriba, la app no recolecta ubicación GPS, datos de contacto, ni ningún otro dato personal, y no incluye SDKs de analítica ni de rastreo de terceros distintos de los de AdMob/UMP.</p>
+
+          <h3>Compartir información</h3>
+          <p>Los reportes (PDF/CSV) que el usuario decide generar se crean localmente y solo se comparten si el propio usuario elige explícitamente la opción "Compartir" y selecciona una aplicación de destino (por ejemplo, WhatsApp o correo electrónico). La app no comparte ni transmite datos por su cuenta.</p>
+
+          <h3>Eliminación de datos</h3>
+          <p>El usuario puede eliminar cualquier proyecto (y sus mediciones asociadas) desde el Panel de Proyectos, o desinstalar la app para eliminar toda la información almacenada localmente.</p>
+
+          <h3>Menores de edad</h3>
+          <p>La app no está dirigida a menores de edad y no recolecta intencionalmente información de menores.</p>
+
+          <h3>Contacto</h3>
+          <p>Ante cualquier duda, solicitud o comentario sobre esta política de privacidad o sobre el manejo de datos de la app, puedes escribir a:<br>
+            <strong>Emmanuel Vargas</strong><br>
+            Correo electrónico: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="cinta-metrica-camara-3d">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: TextRPGSeed
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#textrpgseed
+             ===================================================================== -->
+        <article class="policy" id="textrpgseed">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#7c2d12;font-size:.9rem" aria-hidden="true">RPG</span>
+            <h2>Política de Privacidad<span>TextRPGSeed</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 26 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <h3>1. Introducción</h3>
+          <p>Esta Política de Privacidad describe cómo TextRPGSeed ("la aplicación", "la app") trata la información del usuario. TextRPGSeed es un juego de rol basado en texto que funciona principalmente de forma local en el dispositivo del usuario. Al descargar, instalar o usar la aplicación, el usuario acepta las prácticas descritas en este documento.</p>
+
+          <h3>2. Datos que la aplicación NO recopila</h3>
+          <p>TextRPGSeed no requiere que el usuario cree una cuenta, no solicita nombre, correo electrónico, número de teléfono, ubicación, contactos, fotos, ni ningún otro dato personal identificable para poder jugar. La aplicación no tiene servidores propios, no sincroniza partidas en la nube y no comparte datos de la partida con el desarrollador ni con terceros.</p>
+
+          <h3>3. Datos de la partida almacenados localmente</h3>
+          <p>Toda la información relacionada con el progreso del juego se guarda exclusivamente en el dispositivo del usuario, mediante almacenamiento cifrado local (EncryptedSharedPreferences). Esto incluye:</p>
+          <ul>
+            <li>Estado del personaje (salud, oro, inventario, arquetipo elegido).</li>
+            <li>Semillas (seeds) de partida, personalizadas o generadas automáticamente.</li>
+            <li>Historial/cementerio de partidas anteriores (epitafios, estadísticas de runs pasadas).</li>
+            <li>Ajustes de la aplicación (idioma, volumen, velocidad de texto).</li>
+          </ul>
+          <p>Estos datos nunca salen del dispositivo salvo que el propio usuario decida compartirlos manualmente (por ejemplo, al usar la función "Compartir epitafio" o "Copiar semilla", que utilizan el sistema de compartir o el portapapeles del propio Android bajo el control directo del usuario). El usuario puede borrar todos estos datos en cualquier momento desde <code>Ajustes → "Borrar datos locales"</code>, o desinstalando la aplicación.</p>
+
+          <h3>4. Publicidad (Google AdMob)</h3>
+          <p>TextRPGSeed muestra un banner publicitario proporcionado por Google AdMob (Google Mobile Ads SDK) en la parte inferior de la pantalla. Para poder mostrar estos anuncios, el SDK de Google puede recopilar y procesar cierta información técnica del dispositivo, entre ella:</p>
+          <ul>
+            <li>El identificador de publicidad (Advertising ID / AAID).</li>
+            <li>Información del dispositivo (modelo, versión de sistema operativo, idioma, zona horaria).</li>
+            <li>Dirección IP aproximada.</li>
+            <li>Datos de interacción con los anuncios (impresiones, clics).</li>
+          </ul>
+          <p>Esta información es recopilada y procesada por Google conforme a su propia política de privacidad, no por el desarrollador de esta aplicación. El desarrollador no tiene acceso directo a estos datos individuales; solo recibe informes agregados y anónimos sobre el rendimiento de los anuncios.</p>
+          <p>Puedes consultar cómo Google utiliza estos datos en:<br>
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a><br>
+            <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a></p>
+
+          <h3>5. Consentimiento de privacidad (RGPD / usuarios de la Unión Europea y Reino Unido)</h3>
+          <p>Antes de mostrar anuncios personalizados a usuarios ubicados en el Espacio Económico Europeo (EEE), Reino Unido o Suiza, la aplicación solicita el consentimiento explícito del usuario mediante el formulario del User Messaging Platform (UMP) de Google, en cumplimiento del Reglamento General de Protección de Datos (RGPD) y normativas equivalentes. El usuario puede revisar o modificar sus preferencias de consentimiento la próxima vez que se le presente el formulario, según el comportamiento estándar del SDK de Google.</p>
+
+          <h3>6. Base legal para el tratamiento de datos</h3>
+          <p>Cuando aplica el RGPD, la base legal para el uso de datos con fines publicitarios es el consentimiento del usuario, recogido mediante el formulario de consentimiento antes mencionado. Fuera de las regiones donde el RGPD u otras leyes similares exigen consentimiento explícito, el tratamiento de datos publicitarios se basa en el interés legítimo del desarrollador de financiar la aplicación mediante publicidad, conforme a las políticas de Google AdMob.</p>
+
+          <h3>7. Terceros y proveedores de servicios</h3>
+          <p>El único servicio de terceros integrado en esta aplicación es Google AdMob (incluyendo el SDK de Google Mobile Ads y el User Messaging Platform), operado por Google LLC. No se integran redes sociales, servicios de analítica adicionales, servicios de rastreo de terceros, ni SDKs de terceros distintos a los mencionados.</p>
+
+          <h3>8. Menores de edad</h3>
+          <p>TextRPGSeed no está dirigida específicamente a niños menores de 13 años (o la edad mínima equivalente según la legislación local) y no recopila conscientemente datos personales de menores. La clasificación de contenido sugerida de la aplicación es PEGI 7 / Everyone 10+, por contener violencia de fantasía leve en formato de texto. Si un padre, madre o tutor considera que un menor ha proporcionado datos personales a través de esta aplicación (lo cual no debería ser posible dado que no se recopilan datos personales), puede contactar al desarrollador mediante el correo indicado para solicitar su eliminación.</p>
+
+          <h3>9. Seguridad de los datos</h3>
+          <p>Los datos de la partida almacenados en el dispositivo se protegen mediante cifrado local (EncryptedSharedPreferences de AndroidX Security). No se transmiten a servidores externos del desarrollador, por lo que no existe riesgo de filtración de estos datos específicos a través de servidores propios.</p>
+
+          <h3>10. Permisos utilizados por la aplicación</h3>
+          <p>La aplicación solicita únicamente los siguientes permisos del sistema:</p>
+          <ul>
+            <li><strong><code>INTERNET</code>:</strong> necesario para que el SDK de Google Mobile Ads pueda descargar y mostrar anuncios.</li>
+            <li><strong><code>ACCESS_NETWORK_STATE</code>:</strong> permite al SDK de anuncios comprobar el estado de la conexión de red para optimizar la entrega de anuncios.</li>
+          </ul>
+          <p>No se solicita acceso a cámara, ubicación, contactos, almacenamiento externo, micrófono ni ningún otro permiso sensible.</p>
+
+          <h3>11. Transferencias internacionales de datos</h3>
+          <p>Dado que el único tratamiento de datos personales proviene del SDK de Google AdMob, cualquier transferencia internacional de datos derivada de la publicidad se rige por las propias políticas y garantías de transferencia de datos de Google, descritas en su Política de Privacidad.</p>
+
+          <h3>12. Derechos del usuario</h3>
+          <p>Dependiendo de la legislación aplicable en tu país o región (por ejemplo, RGPD en la Unión Europea, CCPA en California, u otras leyes de protección de datos), puedes tener derecho a acceder, rectificar, eliminar o limitar el tratamiento de tus datos personales. Dado que esta aplicación no recopila datos personales identificables directamente (más allá de lo gestionado por Google AdMob según se describe en la Sección 4), para ejercer derechos relacionados específicamente con la publicidad de Google puedes:</p>
+          <ul>
+            <li>Restablecer o eliminar tu identificador de publicidad desde los ajustes de privacidad de tu dispositivo Android (<code>Ajustes → Google → Anuncios</code>).</li>
+            <li>Consultar y ejercer tus derechos directamente ante Google a través de su Política de Privacidad.</li>
+          </ul>
+          <p>Para cualquier consulta relacionada con los datos locales de la partida (que puedes eliminar tú mismo desde la app) o con esta política, puedes escribir al correo de contacto indicado.</p>
+
+          <h3>13. Cambios en esta Política de Privacidad</h3>
+          <p>Esta Política de Privacidad puede actualizarse ocasionalmente para reflejar cambios en la aplicación, en la normativa aplicable o en los servicios de terceros integrados (como Google AdMob). Se recomienda revisar este documento periódicamente. El uso continuado de la aplicación tras la publicación de cambios constituye la aceptación de la política actualizada.</p>
+
+          <h3>14. Contacto</h3>
+          <p>Si tienes preguntas, comentarios o solicitudes relacionadas con esta Política de Privacidad o con el tratamiento de datos en TextRPGSeed, puedes contactar al desarrollador en:<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo electrónico:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="textrpgseed">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: Ubicamemo Notas GPS
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#ubicamemo-notas-gps
+             ===================================================================== -->
+        <article class="policy" id="ubicamemo-notas-gps">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#16a34a" aria-hidden="true">UM</span>
+            <h2>Política de Privacidad<span>Ubicamemo Notas GPS</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 26 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <p>Esta Política de Privacidad describe cómo Ubicamemo Notas GPS ("la App", "nosotros") recopila, utiliza y protege la información cuando usas la aplicación. Al instalar o usar la App, aceptas las prácticas descritas en este documento.</p>
+
+          <h3>1. Responsable de la aplicación</h3>
+          <p><strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+          <p>Para cualquier pregunta, solicitud relacionada con tus datos, o reporte de un problema de privacidad, puedes escribir al correo indicado arriba.</p>
+
+          <h3>2. Principio general: todo se guarda en tu dispositivo</h3>
+          <p>Ubicamemo Notas GPS es una aplicación 100% local. No tenemos servidores propios, no operamos ninguna base de datos en la nube, y no recopilamos ni recibimos en nuestros sistemas la información que guardas en la App (títulos de notas, textos de recordatorio, ubicaciones, contactos elegidos, historial de visitas, etc.). Toda esa información se almacena únicamente en la memoria de tu propio dispositivo, usando una base de datos local (Room/SQLite) y preferencias locales (DataStore). Nosotros, como desarrolladores, no tenemos acceso a esos datos.</p>
+          <p>La única excepción es la información técnica que procesan los servicios de terceros integrados en la App (Google Play Services y Google Mobile Ads), descrita en la sección 5.</p>
+
+          <h3>3. Información que la App accede o procesa localmente</h3>
+          <h4>3.1 Ubicación (GPS)</h4>
+          <p>La App solicita permiso de ubicación precisa (<code>ACCESS_FINE_LOCATION</code>), aproximada (<code>ACCESS_COARSE_LOCATION</code>) y, opcionalmente, ubicación en segundo plano (<code>ACCESS_BACKGROUND_LOCATION</code>). Esta información se usa exclusivamente para:</p>
+          <ul>
+            <li>Guardar las coordenadas de los lugares que tú eliges anclar a tus notas.</li>
+            <li>Detectar, mediante la API de Geofencing de Google Play Services, cuándo entras en el radio de un lugar guardado, para poder mostrarte la alerta correspondiente.</li>
+          </ul>
+          <p>La ubicación en segundo plano solo se usa para que las alertas funcionen aunque la App esté cerrada; puedes revocarla en cualquier momento desde los ajustes del sistema, con la única consecuencia de que las alertas por geocerca dejarán de funcionar con la App cerrada.</p>
+
+          <h4>3.2 Red Wi-Fi (nombre de red / SSID)</h4>
+          <p>Si activas el disparador por Wi-Fi en una nota, la App consulta periódicamente (en segundo plano, mediante WorkManager) el nombre (SSID) de la red Wi-Fi a la que está conectado tu dispositivo, únicamente para compararlo con el SSID guardado en tus notas y así poder mostrarte la alerta correspondiente. Esta información no sale de tu dispositivo.</p>
+
+          <h4>3.3 Contenido de tus notas</h4>
+          <p>Título, texto del recordatorio, etiqueta o dirección, radio de proximidad y demás campos que escribes al crear una nota se almacenan localmente en tu dispositivo.</p>
+
+          <h4>3.4 Información de contacto (opcional)</h4>
+          <p>Si activas la función de "mensaje automático al llegar", puedes elegir un contacto de tu agenda mediante el selector nativo del sistema operativo. La App solo guarda, de forma local, el nombre y número de teléfono de ese contacto para asociarlo a la nota correspondiente; la App no solicita el permiso de lectura de contactos (<code>READ_CONTACTS</code>) ni accede a tu agenda completa en ningún momento.</p>
+
+          <h4>3.5 Envío de mensajes</h4>
+          <p>La App nunca envía mensajes SMS de forma automática o silenciosa. Cuando llegas a una ubicación con esta función activada, la App simplemente abre tu aplicación de mensajería predeterminada con el texto y destinatario ya rellenados; eres tú quien decide, con un toque, si el mensaje se envía o no. La App no solicita el permiso <code>SEND_SMS</code>.</p>
+
+          <h4>3.6 Notificaciones</h4>
+          <p>La App solicita el permiso de notificaciones (<code>POST_NOTIFICATIONS</code>) únicamente para mostrarte las alertas de llegada, tanto como notificación como en pantalla completa cuando el dispositivo está bloqueado.</p>
+
+          <h4>3.7 Copias de seguridad</h4>
+          <p>Puedes exportar tus notas a un archivo local en formato JSON y guardarlo donde prefieras (almacenamiento interno, tarjeta SD, o subirlo tú mismo a tu nube personal). La App no sube automáticamente esta información a ningún servidor; el archivo se genera y gestiona enteramente a través del selector de archivos del sistema operativo, bajo tu control.</p>
+
+          <h3>4. Información que NO recopilamos</h3>
+          <p>No pedimos que crees una cuenta ni que inicies sesión. No recopilamos tu nombre, correo electrónico, ni ningún otro dato de identificación personal directamente a través del uso normal de la App, salvo la información que tú mismo decides guardar dentro de tus notas (por ejemplo, si eliges incluir el nombre de un contacto).</p>
+
+          <h3>5. Servicios de terceros</h3>
+          <h4>5.1 Google Play Services (ubicación y geocercas)</h4>
+          <p>Usamos la API de Geofencing de Google Play Services para detectar tu llegada a los lugares guardados. Este servicio se ejecuta localmente en tu dispositivo a través de Google Play Services, sujeto a la Política de Privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+
+          <h4>5.2 Google Mobile Ads (AdMob) y User Messaging Platform (UMP)</h4>
+          <p>La App muestra anuncios publicitarios (banners) proporcionados por Google AdMob. Para poder mostrar estos anuncios, el SDK de Google Mobile Ads puede recopilar y procesar cierta información técnica de tu dispositivo (como el identificador de publicidad, dirección IP aproximada, información del dispositivo y datos de interacción con los anuncios), conforme a las políticas de privacidad de Google.</p>
+          <p>Antes de solicitar anuncios, la App utiliza el User Messaging Platform (UMP) de Google para determinar si te encuentras en una región (como el Espacio Económico Europeo o el Reino Unido) donde se requiere tu consentimiento explícito conforme al Reglamento General de Protección de Datos (RGPD/GDPR), y para mostrarte el formulario de consentimiento correspondiente cuando aplique. Puedes gestionar tus preferencias de privacidad respecto a la publicidad personalizada desde ese formulario o desde los ajustes de anuncios de tu dispositivo Android.</p>
+          <p>Para más información sobre cómo Google recopila y usa datos a través de sus servicios publicitarios, consulta: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></p>
+
+          <h4>5.3 OpenStreetMap / osmdroid</h4>
+          <p>El mapa que se muestra dentro de la App utiliza mosaicos (tiles) de OpenStreetMap a través de la librería osmdroid. Para descargar estos mosaicos, tu dispositivo se conecta a los servidores de OpenStreetMap; esta conexión no incluye información personal identificable más allá de la dirección IP necesaria para cualquier solicitud de red estándar.</p>
+
+          <h3>6. Base legal y consentimiento</h3>
+          <p>El tratamiento de tu ubicación, red Wi-Fi y demás datos descritos en la sección 3 se basa en tu consentimiento explícito, otorgado al conceder los permisos correspondientes dentro del sistema operativo Android. Puedes retirar este consentimiento en cualquier momento revocando los permisos desde los ajustes de tu dispositivo, desinstalando la App, o eliminando tus notas individualmente desde la propia aplicación.</p>
+
+          <h3>7. Conservación y eliminación de datos</h3>
+          <p>Toda la información que guardas en la App permanece en tu dispositivo hasta que tú decidas eliminarla, ya sea borrando una nota específica, borrando los datos de la App desde los ajustes del sistema, o desinstalando la aplicación. Al desinstalar la App, toda la información almacenada localmente se elimina de forma permanente, salvo cualquier copia de seguridad que hayas exportado manualmente a otra ubicación.</p>
+
+          <h3>8. Seguridad</h3>
+          <p>Dado que los datos se almacenan localmente en tu dispositivo y no en servidores externos operados por nosotros, la seguridad de dicha información depende en gran medida de las medidas de seguridad de tu propio dispositivo (bloqueo de pantalla, cifrado del sistema operativo, permisos de la aplicación, etc.). Te recomendamos mantener tu dispositivo protegido con un método de bloqueo seguro.</p>
+
+          <h3>9. Privacidad de menores</h3>
+          <p>Ubicamemo Notas GPS no está dirigida a niños menores de 13 años (o la edad mínima equivalente según la legislación local) y no recopilamos conscientemente información personal de menores de esa edad. Si eres madre, padre o tutor y crees que un menor nos ha proporcionado información personal, contáctanos al correo indicado en la sección 1 para tomar las medidas correspondientes.</p>
+
+          <h3>10. Tus derechos</h3>
+          <p>Dependiendo de tu ubicación, puedes tener derecho a acceder, corregir, eliminar o exportar la información almacenada en la App. Dado que todos los datos residen localmente en tu dispositivo, puedes ejercer estos derechos directamente desde la propia aplicación (editando o eliminando notas, exportando tus datos, o desinstalando la App). Para cualquier consulta adicional sobre tus derechos respecto a los datos procesados por servicios de terceros integrados (Google Play Services, Google AdMob), puedes además dirigirte directamente a Google a través de sus propias políticas de privacidad, o contactarnos al correo de la sección 1 y te orientaremos.</p>
+
+          <h3>11. Transferencias internacionales de datos</h3>
+          <p>La información técnica procesada por los servicios de terceros descritos en la sección 5 (Google Play Services, Google Mobile Ads) puede ser transferida y procesada en servidores ubicados fuera de tu país de residencia, conforme a las políticas de privacidad y salvaguardas de Google.</p>
+
+          <h3>12. Cambios a esta Política de Privacidad</h3>
+          <p>Podemos actualizar esta Política de Privacidad ocasionalmente para reflejar cambios en la App o en requisitos legales aplicables. Cualquier cambio será publicado en la ubicación donde compartas esta política (por ejemplo, en la ficha de la App en Google Play), indicando la fecha de la última actualización en la parte superior del documento. Te recomendamos revisar esta política periódicamente.</p>
+
+          <h3>13. Contacto</h3>
+          <p>Si tienes preguntas, comentarios o solicitudes relacionadas con esta Política de Privacidad o con el tratamiento de tus datos, puedes escribirnos a:<br>
+            <strong>Emmanuel Vargas</strong><br>
+            <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="ubicamemo-notas-gps">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: Countdown Días Faltantes Pro
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#countdown-dias-faltantes-pro
+             ===================================================================== -->
+        <article class="policy" id="countdown-dias-faltantes-pro">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#6d28d9" aria-hidden="true">CD</span>
+            <h2>Política de Privacidad<span>Countdown Días Faltantes Pro</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 26 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <h3>1. Introducción</h3>
+          <p>Esta Política de Privacidad describe cómo Countdown Días Faltantes Pro ("la App") recopila, usa y protege la información cuando la utilizas. La App es desarrollada y mantenida por:</p>
+          <p><strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+          <p>Al descargar, instalar o usar la App, aceptas las prácticas descritas en este documento. Si no estás de acuerdo, por favor no utilices la App.</p>
+
+          <h3>2. Resumen general</h3>
+          <p>Countdown Días Faltantes Pro fue diseñada bajo un principio de privacidad primero: toda la información que creas dentro de la App (eventos, fechas, notas, categorías, colores) se almacena exclusivamente en el almacenamiento local de tu dispositivo, usando una base de datos local (Room) y preferencias locales (DataStore). Esta información no se envía, sincroniza ni transmite a ningún servidor del desarrollador, porque la App no opera servidores propios ni cuentas de usuario.</p>
+          <p>La única excepción a este funcionamiento local es el servicio de publicidad de terceros (Google AdMob) que se describe en la sección 5, necesario para mostrar el banner publicitario que permite mantener la App gratuita.</p>
+
+          <h3>3. Información que la App NO recopila</h3>
+          <p>La App no requiere ni solicita:</p>
+          <ul>
+            <li>Registro de cuenta, nombre, dirección, número de teléfono ni ningún otro dato de identidad.</li>
+            <li>Acceso a tus contactos, cámara, micrófono, ubicación GPS ni galería de fotos.</li>
+            <li>Ningún dato financiero o de pago (la App no tiene compras dentro de la aplicación).</li>
+          </ul>
+
+          <h3>4. Información almacenada localmente en tu dispositivo</h3>
+          <p>Para el funcionamiento de sus funciones, la App guarda localmente en tu propio dispositivo:</p>
+          <ul>
+            <li><strong>Los eventos que creas:</strong> título, fecha, hora, categoría, color, notas y configuración de repetición anual.</li>
+            <li><strong>Tus preferencias:</strong> tema visual (Claro/Oscuro/AMOLED), idioma seleccionado, configuración de notificaciones y estado del Modo Zen.</li>
+            <li><strong>Las copias de seguridad (respaldo)</strong> que exportes manualmente en formato JSON, si decides usar esa función. Estas copias se guardan donde tú elijas dentro de tu propio dispositivo (mediante el selector de archivos del sistema Android) y solo se leen si tú mismo las vuelves a importar. El desarrollador nunca tiene acceso a estos archivos.</li>
+          </ul>
+          <p>Ninguno de estos datos sale de tu dispositivo salvo que tú decidas exportarlos y compartirlos manualmente (por ejemplo, al usar la función "Compartir como imagen", que genera una imagen local y la comparte mediante el selector de aplicaciones de Android que tú mismo eliges).</p>
+
+          <h3>5. Publicidad (Google AdMob)</h3>
+          <p>La App muestra un banner publicitario proporcionado por Google AdMob, un servicio de publicidad de Google LLC. Para poder mostrar anuncios, Google AdMob puede recopilar y procesar automáticamente cierta información técnica de tu dispositivo, entre otra:</p>
+          <ul>
+            <li>Identificador de publicidad de Android (Advertising ID) y otros identificadores de dispositivo.</li>
+            <li>Dirección IP y ubicación aproximada derivada de ella.</li>
+            <li>Información técnica del dispositivo (modelo, sistema operativo, idioma, zona horaria).</li>
+            <li>Datos de interacción con los anuncios (impresiones, clics).</li>
+          </ul>
+          <p>Esta recopilación la realiza Google como proveedor de publicidad, no el desarrollador de la App directamente. El desarrollador no tiene acceso a esta información individualizada; solo recibe reportes agregados y anónimos de rendimiento publicitario.</p>
+          <p>Para más información sobre cómo Google recopila y usa estos datos, consulta la Política de Privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a> y la sección "Cómo Google usa la información de sitios o aplicaciones que utilizan sus servicios": <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></p>
+
+          <h4>5.1 Consentimiento de anuncios (GDPR / UK GDPR)</h4>
+          <p>Si te encuentras en el Espacio Económico Europeo, el Reino Unido, o en cualquier región donde la ley lo exija, la App te mostrará un formulario de consentimiento (a través del User Messaging Platform de Google) antes de cargar cualquier anuncio, para que puedas elegir si autorizas o no la personalización de la publicidad que ves. Puedes cambiar esta decisión más adelante volviendo a abrir dicho formulario desde la configuración de privacidad de tu dispositivo o reinstalando la App.</p>
+
+          <h4>5.2 Anuncios dirigidos a un público general</h4>
+          <p>La App no está dirigida específicamente a niños y no solicita configuración de anuncios para audiencias infantiles.</p>
+
+          <h3>6. Permisos que solicita la App y para qué se usan</h3>
+          <div class="policy-table-wrap">
+            <table class="policy-table">
+              <thead><tr><th>Permiso</th><th>Motivo</th></tr></thead>
+              <tbody>
+                <tr><td>Notificaciones (<code>POST_NOTIFICATIONS</code>)</td><td>Mostrarte recordatorios locales de tus eventos (por ejemplo, "un día antes" o "el mismo día").</td></tr>
+                <tr><td>Iniciar tras reinicio (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Volver a programar tus recordatorios y widgets después de que reinicies el teléfono.</td></tr>
+                <tr><td>Vibración (<code>VIBRATE</code>)</td><td>Vibración discreta al mostrarte una notificación.</td></tr>
+                <tr><td>Mantener pantalla encendida (<code>WAKE_LOCK</code>)</td><td>Únicamente cuando activas manualmente el "Modo Zen" dentro de un evento, para que la pantalla no se apague mientras lo tienes abierto.</td></tr>
+                <tr><td>Internet y estado de red (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>)</td><td>Exclusivamente utilizados por el SDK de Google AdMob para poder solicitar y mostrar el banner publicitario. Ninguna otra función de la App usa estos permisos.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Ninguno de estos permisos se usa para rastrear tu ubicación, tus contactos ni tu actividad fuera de la App.</p>
+
+          <h3>7. Widgets de pantalla de inicio</h3>
+          <p>Los widgets que puedes agregar a tu pantalla de inicio (tamaños 1×1, 2×2 y 4×2) muestran la información de tus eventos leyéndola directamente de la base de datos local del dispositivo. Se actualizan periódicamente mediante tareas en segundo plano (WorkManager) que se ejecutan completamente sin conexión a internet y sin enviar ningún dato fuera del dispositivo.</p>
+
+          <h3>8. Con quién se comparte la información</h3>
+          <ul>
+            <li>No vendemos, alquilamos ni comercializamos ninguna información de nuestros usuarios.</li>
+            <li>No compartimos los eventos, notas ni ninguna otra información que ingreses en la App con nadie, porque nunca sale de tu dispositivo.</li>
+            <li>El único tercero involucrado es Google AdMob / Google LLC, únicamente para la entrega de anuncios, según se describe en la sección 5.</li>
+          </ul>
+
+          <h3>9. Seguridad</h3>
+          <p>Dado que tus datos permanecen almacenados localmente en tu dispositivo y no en servidores externos del desarrollador, la seguridad de esa información depende principalmente de la seguridad de tu propio dispositivo (bloqueo de pantalla, cifrado del sistema operativo, etc.). Te recomendamos mantener tu dispositivo protegido con un método de bloqueo.</p>
+
+          <h3>10. Retención y eliminación de datos</h3>
+          <p>Toda la información de la App se conserva únicamente mientras la App esté instalada en tu dispositivo. Puedes eliminar tus datos en cualquier momento:</p>
+          <ul>
+            <li>Borrando eventos individuales desde la propia App.</li>
+            <li>Borrando los datos de la aplicación desde Ajustes del sistema Android (<code>Ajustes → Aplicaciones → Countdown Días Faltantes Pro → Almacenamiento → Borrar datos</code>).</li>
+            <li>Desinstalando la App, lo cual elimina permanentemente toda la información almacenada localmente.</li>
+          </ul>
+          <p>El desarrollador no conserva copia alguna de estos datos, ya que nunca los recibe.</p>
+
+          <h3>11. Privacidad de menores</h3>
+          <p>La App no está dirigida a menores de 13 años (o la edad mínima equivalente según tu país) y no recopila intencionalmente información personal de menores. Si eres padre, madre o tutor y crees que un menor a tu cargo nos ha proporcionado información personal, contáctanos al correo indicado en la sección 13 para tomar las medidas correspondientes.</p>
+
+          <h3>12. Tus derechos</h3>
+          <p>Dependiendo de tu país o región (por ejemplo, bajo el RGPD/GDPR en la Unión Europea, la UK GDPR en el Reino Unido, o leyes similares de privacidad en otras jurisdicciones), puedes tener derecho a:</p>
+          <ul>
+            <li>Acceder a la información que la App almacena sobre ti (que, como se explicó, reside únicamente en tu propio dispositivo).</li>
+            <li>Eliminar dicha información en cualquier momento, mediante los métodos descritos en la sección 10.</li>
+            <li>Retirar tu consentimiento a la personalización de anuncios en cualquier momento, mediante el formulario de consentimiento de la App o la configuración de anuncios de tu dispositivo Android (<code>Ajustes → Google → Anuncios</code>).</li>
+            <li>Presentar una reclamación ante tu autoridad local de protección de datos si consideras que tus derechos no han sido respetados.</li>
+          </ul>
+
+          <h3>13. Cambios a esta Política de Privacidad</h3>
+          <p>Podemos actualizar esta Política de Privacidad ocasionalmente, por ejemplo si se agregan nuevas funciones a la App o si cambian los requisitos legales aplicables. Cualquier cambio será reflejado actualizando la fecha de "Última actualización" al inicio de este documento. Te recomendamos revisar esta política periódicamente.</p>
+
+          <h3>14. Contacto</h3>
+          <p>Si tienes preguntas, comentarios o solicitudes relacionadas con esta Política de Privacidad o con el manejo de datos en Countdown Días Faltantes Pro, puedes contactar al desarrollador:<br>
+            <strong>Emmanuel Vargas</strong><br>
+            Correo electrónico: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="countdown-dias-faltantes-pro">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: Chat de Notas Flotante
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#chat-de-notas-flotante
+             ===================================================================== -->
+        <article class="policy" id="chat-de-notas-flotante">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#0ea5e9" aria-hidden="true">CN</span>
+            <h2>Política de Privacidad<span>Chat de Notas Flotante</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 26 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <h3>1. Introducción</h3>
+          <p>Esta Política de Privacidad describe cómo la aplicación móvil "Chat de Notas Flotante" (en adelante, "la App") trata la información de sus usuarios. La App es desarrollada y mantenida por Emmanuel Vargas (en adelante, "el Desarrollador"). Al descargar, instalar o usar la App, aceptas las prácticas descritas en este documento.</p>
+          <p><strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <h3>2. Resumen general</h3>
+          <p>Chat de Notas Flotante es una aplicación de notas personales que funciona principalmente de forma local en el dispositivo del usuario. La App no requiere que el usuario cree una cuenta, no exige iniciar sesión y no envía el contenido de tus notas a ningún servidor propio ni de terceros. Toda la información que escribes (tus notas, etiquetas, fecha y hora, y si están fijadas o son temporales) se guarda únicamente en una base de datos local dentro de tu propio dispositivo.</p>
+          <p>La única excepción a este funcionamiento local es el servicio de anuncios (AdMob), detallado en la sección 6, que puede procesar cierta información técnica del dispositivo conforme a las políticas de Google.</p>
+
+          <h3>3. Información que la App NO recopila</h3>
+          <p>La App no recopila, no solicita ni transmite a servidores del Desarrollador:</p>
+          <ul>
+            <li>El contenido de tus notas, hashtags o borradores.</li>
+            <li>Nombre, correo electrónico, número de teléfono ni ningún dato de identificación personal directa.</li>
+            <li>Ubicación geográfica (la App no solicita permiso de ubicación).</li>
+            <li>Contactos, fotos, archivos, mensajes ni datos de otras aplicaciones instaladas.</li>
+            <li>Historial de navegación o de uso de otras apps.</li>
+          </ul>
+
+          <h3>4. Información almacenada localmente en tu dispositivo</h3>
+          <p>Para que la App funcione, se guarda localmente (dentro del almacenamiento privado de la App en tu dispositivo) la siguiente información, que en ningún momento sale de tu teléfono salvo que tú mismo decidas exportarla o compartirla:</p>
+          <ul>
+            <li>El texto de las notas que escribes, junto con la fecha y hora de creación o edición.</li>
+            <li>Los hashtags (#etiquetas) que incluyas en tus notas, usados únicamente para filtrar dentro de la propia App.</li>
+            <li>El estado de cada nota: si está fijada, archivada, o marcada como temporal (nota efímera que se autoelimina a las 24 horas).</li>
+            <li>Tus preferencias de configuración: idioma elegido, tema claro/oscuro, tamaño y opacidad de la burbuja flotante, paleta de color, modo "no molestar" y si activaste las notas efímeras por defecto.</li>
+            <li>La posición en pantalla donde dejaste la burbuja flotante por última vez.</li>
+          </ul>
+          <p>Esta información se almacena mediante una base de datos local (Room/SQLite) y preferencias del sistema operativo (SharedPreferences), ambas privadas de la App y no accesibles por otras aplicaciones.</p>
+
+          <h3>5. Copias de seguridad (exportar / importar)</h3>
+          <p>La App permite exportar tus notas a un archivo de texto plano en formato JSON, guardado dentro del almacenamiento privado de la App en tu propio dispositivo. Ese archivo solo se comparte con otra aplicación, servicio en la nube (por ejemplo, Google Drive) o contacto si tú, de manera explícita, eliges compartirlo usando el selector para compartir de Android. El Desarrollador no tiene acceso a estos archivos de respaldo ni los recibe en ningún servidor.</p>
+          <p>De la misma manera, la función de importar respaldo solo lee un archivo que tú selecciones manualmente desde tu propio dispositivo.</p>
+
+          <h3>6. Publicidad (Google AdMob)</h3>
+          <p>La App muestra anuncios publicitarios (formato banner) proporcionados por Google AdMob, un servicio de Google LLC. Para poder mostrar estos anuncios, Google AdMob y sus socios publicitarios pueden recopilar y procesar cierta información automáticamente, tal como:</p>
+          <ul>
+            <li>Identificadores de publicidad del dispositivo (por ejemplo, el Android Advertising ID).</li>
+            <li>Dirección IP aproximada y datos generales del dispositivo (modelo, sistema operativo, idioma).</li>
+            <li>Interacciones con los anuncios (impresiones, clics) con fines de medición y prevención de fraude.</li>
+          </ul>
+          <p>Este procesamiento lo realiza Google, no el Desarrollador directamente, y se rige por la Política de Privacidad de Google y por la forma en que Google usa la información de los socios. Puedes consultar cómo Google trata estos datos en:<br>
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a><br>
+            <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></p>
+
+          <h4>6.1 Consentimiento de privacidad (GDPR / UMP)</h4>
+          <p>Si te encuentras en el Espacio Económico Europeo, el Reino Unido, u otra región donde la ley lo exija, la App te mostrará automáticamente un formulario de consentimiento (proporcionado por la plataforma User Messaging Platform de Google) antes de mostrarte anuncios personalizados. Podrás elegir aceptar, rechazar o personalizar el uso de tus datos para publicidad, y podrás cambiar esa elección en cualquier momento desde <code>Configuración &gt; Privacidad y anuncios &gt; Opciones de privacidad</code>, dentro de la propia App.</p>
+
+          <h4>6.2 Anuncios no personalizados</h4>
+          <p>En caso de que no otorgues consentimiento para anuncios personalizados, la App seguirá pudiendo mostrar anuncios no personalizados, los cuales se basan en información contextual limitada y no en tu historial o intereses individuales.</p>
+
+          <h3>7. Permisos que solicita la App y para qué se usan</h3>
+          <ul>
+            <li><strong>Mostrar sobre otras aplicaciones (<code>SYSTEM_ALERT_WINDOW</code>):</strong> necesario para dibujar la burbuja flotante sobre otras apps y permitirte anotar ideas sin salir de lo que estés usando. Este permiso no le da a la App acceso al contenido de otras aplicaciones; solo permite dibujar una ventana encima.</li>
+            <li><strong>Servicio en primer plano (<code>FOREGROUND_SERVICE</code> / <code>FOREGROUND_SERVICE_SPECIAL_USE</code>):</strong> mantiene activa la burbuja flotante de forma confiable mientras la tengas encendida, junto con una notificación persistente que te lo indica y te permite desactivarla en cualquier momento.</li>
+            <li><strong>Notificaciones (<code>POST_NOTIFICATIONS</code>):</strong> usado únicamente para mostrar la notificación del servicio de la burbuja flotante (Android 13 en adelante).</li>
+            <li><strong>Iniciar automáticamente tras reiniciar el dispositivo (<code>RECEIVE_BOOT_COMPLETED</code>):</strong> permite que la burbuja flotante se vuelva a mostrar tras reiniciar tu teléfono, solo si tú la habías activado previamente.</li>
+            <li><strong>Vibración (<code>VIBRATE</code>):</strong> retroalimentación táctil sutil dentro de la App (por ejemplo, al fijar o archivar una nota).</li>
+            <li><strong>Internet y estado de red (<code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code>):</strong> requeridos exclusivamente para poder solicitar y mostrar los anuncios de Google AdMob descritos en la sección 6. Ninguna otra función de la App (tus notas, la burbuja, los respaldos) requiere ni usa conexión a internet.</li>
+          </ul>
+          <p>La App no solicita permisos de cámara, micrófono, contactos, ubicación, almacenamiento general del teléfono, ni acceso a SMS o llamadas.</p>
+
+          <h3>8. Menores de edad</h3>
+          <p>La App no está dirigida específicamente a niños ni recopila conscientemente información personal de menores de edad. Si eres madre, padre o tutor y crees que un menor a tu cargo nos ha proporcionado información personal a través de la App, contáctanos al correo indicado en la sección 11 para tomar las medidas correspondientes.</p>
+
+          <h3>9. Seguridad de la información</h3>
+          <p>Dado que el contenido de tus notas se almacena únicamente en tu propio dispositivo y no se transmite a servidores del Desarrollador, la seguridad de esa información depende en gran parte de la seguridad general de tu dispositivo (bloqueo de pantalla, cifrado del sistema operativo, etc.). Te recomendamos proteger el acceso a tu teléfono para resguardar tus notas.</p>
+
+          <h3>10. Tus derechos y control sobre tus datos</h3>
+          <p>Dado que toda la información de tus notas vive en tu dispositivo, tienes control total sobre ella en todo momento:</p>
+          <ul>
+            <li>Puedes editar o eliminar cualquier nota individualmente desde la App.</li>
+            <li>Puedes exportar todas tus notas como respaldo (sección 5).</li>
+            <li>Puedes vaciar por completo tu historial de notas desde <code>Configuración &gt; Gestión de datos &gt; Vaciar historial</code>, lo cual las elimina de forma permanente e irreversible.</li>
+            <li>Puedes desinstalar la App en cualquier momento, lo que elimina toda la información almacenada localmente por ella.</li>
+            <li>Puedes revisar o modificar tu consentimiento de anuncios personalizados desde <code>Configuración &gt; Privacidad y anuncios</code> (sección 6.1).</li>
+          </ul>
+          <p>Si resides en una región con leyes de protección de datos específicas (como el RGPD en la Unión Europea, o leyes de privacidad estatales en Estados Unidos), estos mecanismos te permiten ejercer tus derechos de acceso, rectificación y eliminación sin necesidad de contactar al Desarrollador, ya que los datos nunca salen de tu dispositivo. Para cualquier consulta adicional sobre tus derechos, puedes escribirnos igualmente al correo de contacto.</p>
+
+          <h3>11. Contacto</h3>
+          <p>Si tienes preguntas, dudas o solicitudes relacionadas con esta Política de Privacidad o con el tratamiento de tu información, puedes contactar al Desarrollador en:<br>
+            <strong>Emmanuel Vargas</strong><br>
+            Correo electrónico: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <h3>12. Cambios a esta Política de Privacidad</h3>
+          <p>Esta Política de Privacidad puede actualizarse ocasionalmente para reflejar cambios en la funcionalidad de la App o en requisitos legales o de las plataformas de distribución (como Google Play). Cualquier cambio se reflejará actualizando la fecha de "Última actualización" al inicio de este documento. Se recomienda revisar este documento periódicamente.</p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="chat-de-notas-flotante">Copiar enlace</button>
+            <button class="pill" type="button" onclick="window.print()">Imprimir</button>
+          </div>
+        </article>
+
+        <!-- =====================================================================
+             APP: Calculadora Pectina Frutas
+             URL: https://emmanuel-var.github.io/clickdirectosolucioneshv/politicas/#calculadora-pectina-frutas
+             ===================================================================== -->
+        <article class="policy" id="calculadora-pectina-frutas">
+          <div class="policy-head">
+            <span class="app-icon" style="background:#e11d48" aria-hidden="true">PF</span>
+            <h2>Política de Privacidad<span>Calculadora Pectina Frutas</span></h2>
+          </div>
+
+          <p class="policy-meta">
+            <strong>Última actualización:</strong> 26 de septiembre de 2026<br>
+            <strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>
+          </p>
+
+          <h3>1. Introducción</h3>
+          <p>Esta Política de Privacidad describe cómo "Calculadora Pectina Frutas" (en adelante, "la aplicación" o "la app") trata la información al ser usada. La aplicación es desarrollada y mantenida por Emmanuel Vargas ("el desarrollador", "nosotros"). Al descargar, instalar o usar la aplicación, aceptas las prácticas descritas en este documento.</p>
+
+          <h3>2. Responsable del tratamiento</h3>
+          <p><strong>Desarrollador:</strong> Emmanuel Vargas<br>
+            <strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+          <p>Cualquier pregunta, solicitud o inquietud sobre esta política o sobre el tratamiento de datos puede dirigirse a ese correo electrónico.</p>
+
+          <h3>3. Qué datos recopila la aplicación</h3>
+          <p>La aplicación está diseñada para funcionar de forma local en el dispositivo del usuario. No requiere crear una cuenta, no solicita tu nombre, correo electrónico, número de teléfono ni ningún otro dato de identificación personal para poder usarla.</p>
+          <p>La información que generas dentro de la app —tu historial de cosechas, los pesos calculados, las frutas personalizadas que agregues, tu preferencia de modo oscuro/claro y tu idioma seleccionado— se guarda únicamente en la memoria interna de tu propio dispositivo, mediante las bases de datos locales de la aplicación (Room y DataStore). Esta información nunca se envía a servidores del desarrollador, porque la aplicación no cuenta con servidores propios ni backend alguno.</p>
+          <p>Si usas la función de exportar tu historial, la app genera un archivo de texto plano y te permite guardarlo donde tú elijas en tu propio dispositivo (mediante el selector de archivos nativo de Android). Ese archivo no se transmite a ningún servidor ni a terceros; queda bajo tu control exclusivo.</p>
+
+          <h3>4. Publicidad (Google AdMob)</h3>
+          <p>La aplicación muestra un banner publicitario proporcionado por el servicio Google AdMob, operado por Google LLC. Para poder seleccionar y mostrar anuncios, el SDK de Google Mobile Ads integrado en la app puede recopilar y procesar automáticamente cierta información técnica, entre otra:</p>
+          <ul>
+            <li>El identificador de publicidad de tu dispositivo (Advertising ID).</li>
+            <li>Información general del dispositivo (modelo, sistema operativo, idioma, zona horaria).</li>
+            <li>Dirección IP aproximada (para determinar la región general, no la ubicación exacta).</li>
+            <li>Datos de interacción con los anuncios mostrados (impresiones, clics).</li>
+          </ul>
+          <p>Esta recopilación la realiza Google como proveedor del servicio publicitario, conforme a su propia Política de Privacidad, disponible en: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+          <p>El desarrollador de esta aplicación no tiene acceso a tu información personal identificable a través de este proceso; únicamente recibe reportes agregados y anónimos sobre el rendimiento de los anuncios.</p>
+          <p>Puedes gestionar tus preferencias de publicidad personalizada, o restablecer/eliminar tu identificador de publicidad, desde los ajustes de privacidad de tu dispositivo Android (generalmente en <code>Ajustes &gt; Google &gt; Anuncios</code>, o <code>Ajustes &gt; Privacidad &gt; Anuncios</code>, según la versión de Android).</p>
+
+          <h3>5. Permisos que utiliza la aplicación</h3>
+          <p>La aplicación solicita únicamente los permisos de Internet y de estado de la red (<code>INTERNET</code> y <code>ACCESS_NETWORK_STATE</code>), necesarios exclusivamente para poder cargar y mostrar el banner publicitario de AdMob. La aplicación no solicita permisos de cámara, micrófono, ubicación, contactos, almacenamiento externo ni ningún otro permiso sensible.</p>
+
+          <h3>6. Con quién se comparte la información</h3>
+          <p>No vendemos, alquilamos ni compartimos tu información personal con terceros con fines comerciales propios. La única transferencia de datos que ocurre es la descrita en la sección "Publicidad (Google AdMob)" anterior, estrictamente necesaria para el funcionamiento del servicio de anuncios integrado, y realizada directamente entre tu dispositivo y Google conforme a sus propias políticas.</p>
+
+          <h3>7. Menores de edad</h3>
+          <p>Esta aplicación no está dirigida a niños menores de 13 años y no está diseñada para recopilar intencionalmente información personal de menores de edad. Si tienes motivos para creer que un menor nos ha proporcionado información personal a través de esta app, contáctanos al correo indicado para que tomemos las medidas correspondientes.</p>
+
+          <h3>8. Seguridad y conservación de los datos</h3>
+          <p>Toda la información generada dentro de la app se almacena localmente en tu dispositivo, protegida por los mecanismos de seguridad propios del sistema operativo Android (aislamiento de datos por aplicación). Esta información permanece en tu dispositivo hasta que tú decidas eliminarla —ya sea borrando entradas específicas dentro de la app, usando la opción de restaurar valores de fábrica dentro de la propia app, borrando los datos de la aplicación desde los ajustes del sistema, o desinstalando la aplicación por completo—.</p>
+
+          <h3>9. Tus derechos</h3>
+          <p>Como la aplicación no recopila ni almacena datos personales identificables en servidores propios del desarrollador, no existe una base de datos centralizada sobre la cual ejercer derechos de acceso, rectificación o eliminación ante el desarrollador. El control sobre la información generada por el uso de la app reside enteramente en tu propio dispositivo. En cuanto a los datos procesados por Google para fines publicitarios, puedes ejercer tus derechos y preferencias directamente a través de los controles de privacidad de Google mencionados en la sección 4.</p>
+
+          <h3>10. Cambios a esta política</h3>
+          <p>Esta Política de Privacidad puede actualizarse ocasionalmente, por ejemplo, si se agregan nuevas funciones a la aplicación que impliquen un tratamiento de datos distinto. Cualquier cambio se reflejará actualizando la fecha de "Última actualización" al inicio de este documento. Se recomienda revisar esta política periódicamente.</p>
+
+          <h3>11. Contacto</h3>
+          <p>Si tienes preguntas, comentarios o inquietudes sobre esta Política de Privacidad o sobre el tratamiento de datos en la aplicación, puedes escribir a:<br>
+            <strong>Emmanuel Vargas</strong><br>
+            <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions">
+            <button class="pill copy-link" type="button" data-id="calculadora-pectina-frutas">Copiar enlace</button>
             <button class="pill" type="button" onclick="window.print()">Imprimir</button>
           </div>
         </article>
