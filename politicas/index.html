@@ -365,6 +365,9 @@
         <li><a href="#borrar-metadatos-foto"><span class="app-icon" style="background:#0d9488" aria-hidden="true">BM</span><span><strong>Borrar Metadatos Foto</strong><small>Android · Privacidad y fotos</small></span><span class="arrow" aria-hidden="true">→</span></a></li>
         <li><a href="#boveda-local-claves"><span class="app-icon" style="background:#4338ca" aria-hidden="true">BL</span><span><strong>Bóveda Local de Claves</strong><small>Android · Seguridad y contraseñas</small></span><span class="arrow" aria-hidden="true">→</span></a></li>
         <li><a href="#movilidad-cdmx-rutas-metro"><span class="app-icon" style="background:#ea580c" aria-hidden="true">MC</span><span><strong>Movilidad CDMX Rutas y Metro</strong><small>Android · Mapas y transporte</small></span><span class="arrow" aria-hidden="true">→</span></a></li>
+        <li><a href="#comandakds-meseros-cocina-pos"><span class="app-icon" style="background:#b45309" aria-hidden="true">CK</span><span><strong>ComandaKDS Meseros Cocina POS</strong><small>Android · Restaurantes y punto de venta</small></span><span class="arrow" aria-hidden="true">→</span></a></li>
+        <li><a href="#candy-tube-blast-puzzle"><span class="app-icon" style="background:#db2777" aria-hidden="true">CT</span><span><strong>Candy Tube Blast Puzzle</strong><small>Android · Juegos de puzzle</small></span><span class="arrow" aria-hidden="true">→</span></a></li>
+        <li><a href="#biblia-y-oracion-jesus"><span class="app-icon" style="background:#7c3aed" aria-hidden="true">BO</span><span><strong>Biblia y Oración Jesús</strong><small>Android · Religión y bienestar</small></span><span class="arrow" aria-hidden="true">→</span></a></li>
         </ul>
       </nav>
 
@@ -6786,6 +6789,306 @@
           <p><strong>Emmanuel Vargas</strong><br>Correo: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
 
           <div class="policy-actions"><button class="pill copy-link" type="button" data-id="movilidad-cdmx-rutas-metro">Copiar enlace</button><button class="pill" type="button" onclick="window.print()">Imprimir</button></div>
+        </article>
+
+        <article class="policy" id="comandakds-meseros-cocina-pos">
+          <div class="policy-head"><span class="app-icon" style="background:#b45309" aria-hidden="true">CK</span><h2>Política de Privacidad<span>ComandaKDS Meseros Cocina POS</span></h2></div>
+          <p class="policy-meta"><strong>Última actualización:</strong> 16 de noviembre de 2026<br><strong>Desarrollador y responsable del tratamiento:</strong> Emmanuel Vargas<br><strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+          <p>Esta política describe cómo la aplicación ComandaKDS Meseros Cocina POS (“la app”) trata la información. La app es una herramienta para restaurantes que comunica a meseros y cocina dentro de una red local. Al instalarla y usarla, aceptas esta política.</p>
+
+          <h3>1. Resumen</h3>
+          <ul>
+            <li>La app no tiene cuentas de usuario ni servidores propios. No pedimos que te registres y no recibimos tus datos de operación.</li>
+            <li>Los datos de tu negocio (menú, mesas, comandas, pagos, cortes de caja) se guardan solo en tus dispositivos, en una base de datos cifrada.</li>
+            <li>La comunicación entre cocina y meseros ocurre dentro de tu red Wi-Fi local y va cifrada.</li>
+            <li>La app muestra anuncios de Google AdMob. Para eso Google puede tratar datos del dispositivo, como se explica en la sección 5.</li>
+          </ul>
+
+          <h3>2. Información que maneja la app</h3>
+          <p><strong>a) Datos que tú capturas.</strong> Estos son los datos que escribes en la app:</p>
+          <ul>
+            <li>Menú, categorías, modificadores, precios y disponibilidad de platillos.</li>
+            <li>Mesas, comandas, notas (incluidas notas de alergias), propinas, pagos y cortes de caja.</li>
+            <li>Nombre del mesero o del dispositivo y, en pedidos para llevar, un nombre opcional del cliente.</li>
+            <li>Ajustes de la app (idioma, tema, impresora, entre otros).</li>
+          </ul>
+          <p>Estos datos se almacenan únicamente en el dispositivo en una base de datos cifrada (SQLCipher, AES-256). La llave de cifrado está protegida por el Android Keystore. No se envían al desarrollador ni a terceros.</p>
+          <p><strong>b) Datos que la app no recopila.</strong> La app no solicita tu nombre real, correo, teléfono, dirección, ubicación precisa, contactos, fotos, archivos personales ni datos de salud o financieros (como números de tarjeta). Los pagos se registran solo como importes y método; la app no procesa cobros con tarjeta.</p>
+          <p><strong>c) Datos que procesa Google AdMob.</strong> Se describen en la sección 5.</p>
+
+          <h3>3. Cómo usamos la información</h3>
+          <p>Usamos los datos que capturas solo para que la app funcione:</p>
+          <ul>
+            <li>Mostrar y administrar el menú, las mesas y las comandas.</li>
+            <li>Enviar los pedidos de los meseros a la cocina y avisar cuando una orden está lista.</li>
+            <li>Calcular cuentas, propinas, cambio y cortes de caja.</li>
+            <li>Generar respaldos, reportes, códigos QR y tickets, cuando tú lo pides.</li>
+          </ul>
+          <p>No vendemos datos, no hacemos perfiles y no usamos tus datos de operación para publicidad.</p>
+
+          <h3>4. Comunicación entre dispositivos</h3>
+          <ul>
+            <li>El dispositivo de cocina actúa como servidor local y los dispositivos de los meseros se conectan a él por Wi-Fi.</li>
+            <li>Para vincular un dispositivo, el mesero escanea un código QR que contiene la dirección de la cocina y una clave secreta.</li>
+            <li>Cada mensaje viaja cifrado y autenticado con AES-256-GCM usando esa clave y no sale de tu red local.</li>
+            <li>Quien tenga acceso al código QR de vinculación puede conectarse a tu cocina. Compártelo solo con tu personal y vuelve a generarlo si crees que fue expuesto.</li>
+          </ul>
+
+          <h3>5. Publicidad (Google AdMob) y consentimiento</h3>
+          <p>La app muestra un banner publicitario de Google AdMob. Al cargar y mostrar anuncios, Google actúa como responsable independiente del tratamiento y puede recopilar y procesar, entre otros:</p>
+          <ul>
+            <li>el identificador de publicidad del dispositivo (ID de publicidad de Android),</li>
+            <li>la dirección IP y una ubicación aproximada derivada de ella,</li>
+            <li>información del dispositivo y de la app (modelo, sistema operativo, idioma, versión),</li>
+            <li>datos de interacción con los anuncios (impresiones, clics) y de diagnóstico,</li>
+          </ul>
+          <p>con fines de mostrar anuncios, medir su rendimiento, prevenir fraude y mejorar sus servicios. La app no envía a Google tus datos de operación (menú, comandas, pagos ni nombres).</p>
+          <p><strong>Consentimiento.</strong> En el Espacio Económico Europeo, el Reino Unido, Suiza y los estados de EE. UU. con leyes de privacidad que lo exigen, la app te pide consentimiento mediante la plataforma de mensajes de usuario de Google (UMP) antes de solicitar anuncios. Puedes cambiar o retirar tu consentimiento en cualquier momento en Ajustes › Acerca de › Opciones de privacidad de anuncios (aparece cuando tu región lo requiere).</p>
+          <p><strong>Tus controles en Android.</strong> Puedes restablecer o eliminar el ID de publicidad y desactivar la personalización de anuncios en Ajustes de Android › Google › Anuncios.</p>
+          <p>Más información sobre cómo Google usa los datos: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a> y <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+          <p>La app limita el contenido de los anuncios a una clasificación apta para público general y no está dirigida a niños.</p>
+
+          <h3>6. Permisos que solicita la app</h3>
+          <ul>
+            <li><strong>Cámara:</strong> solo para escanear el código QR de vinculación. Las imágenes no se guardan ni se envían.</li>
+            <li><strong>Internet y estado de red:</strong> cargar anuncios y detectar si hay conexión.</li>
+            <li><strong>Wi-Fi y multidifusión:</strong> que los meseros encuentren y se conecten a la cocina dentro de la red local.</li>
+            <li><strong>Notificaciones y vibración:</strong> avisar de comandas nuevas y de órdenes listas.</li>
+            <li><strong>Servicio en primer plano:</strong> mantener la conexión local activa con la pantalla apagada.</li>
+            <li><strong>Mantener activo el dispositivo:</strong> evitar que la conexión se corte mientras el servicio está funcionando.</li>
+            <li><strong>Bluetooth (conectar):</strong> imprimir en impresoras térmicas ya vinculadas. La app no busca dispositivos Bluetooth ni usa tu ubicación para ello.</li>
+            <li><strong>Almacenamiento (selector de archivos de Android):</strong> solo cuando tú eliges guardar un código QR, un respaldo o un reporte.</li>
+          </ul>
+          <p>Puedes revocar los permisos en cualquier momento desde los ajustes de Android. Algunas funciones dejarán de estar disponibles sin ellos.</p>
+          <p><strong>Notas de voz.</strong> La función de dictado usa el reconocimiento de voz del teclado o del sistema de tu dispositivo. La app no solicita el permiso de micrófono ni graba audio; el tratamiento de la voz depende del servicio de dictado que uses (por ejemplo, el de Google) y de su propia política.</p>
+
+          <h3>7. Compartir información</h3>
+          <p>No compartimos tu información con terceros, salvo en estos casos:</p>
+          <ul>
+            <li><strong>Cuando tú lo decides:</strong> al enviar un ticket por WhatsApp u otra app, imprimir, o exportar y compartir un respaldo o reporte (CSV, Excel, PDF, JSON). Esa información sale de la app con el selector de Android y queda sujeta a las políticas de la app que elijas.</li>
+            <li><strong>Google AdMob,</strong> como se explica en la sección 5.</li>
+            <li><strong>Obligación legal,</strong> si una autoridad competente lo exige. Como no tenemos acceso a tus datos de operación, no podríamos entregarlos.</li>
+          </ul>
+
+          <h3>8. Transferencias internacionales</h3>
+          <p>Google puede tratar los datos de publicidad en servidores ubicados fuera de tu país, incluidos Estados Unidos y otros países. Google aplica sus propias garantías para estas transferencias, descritas en su política de privacidad. Tus datos de operación no se transfieren porque permanecen en tus dispositivos.</p>
+
+          <h3>9. Conservación y eliminación</h3>
+          <ul>
+            <li><strong>Datos de operación:</strong> se conservan en tu dispositivo hasta que los borres. Puedes eliminarlos desinstalando la app o borrando sus datos en Ajustes de Android › Apps › ComandaKDS › Almacenamiento › Borrar datos.</li>
+            <li><strong>Respaldos y reportes exportados:</strong> los archivos que generes y guardes o compartas son tuyos; bórralos tú donde los hayas guardado.</li>
+            <li><strong>Datos de publicidad:</strong> los conserva Google conforme a su política. Puedes restablecer el ID de publicidad desde Android.</li>
+          </ul>
+          <p>Como no operamos servidores ni cuentas, no tenemos datos tuyos que eliminar de nuestra parte. Si crees que tenemos alguno, escríbenos al correo de contacto.</p>
+
+          <h3>10. Seguridad</h3>
+          <p>Aplicamos medidas razonables para proteger la información:</p>
+          <ul>
+            <li>Base de datos local cifrada con SQLCipher (AES-256) y llave protegida por el Android Keystore.</li>
+            <li>Comunicación local cifrada y autenticada con AES-256-GCM.</li>
+            <li>Sin envío de datos de operación a servidores externos.</li>
+          </ul>
+          <p>Ningún sistema es totalmente infalible. Te recomendamos proteger tus dispositivos con bloqueo de pantalla, mantener Android actualizado y guardar tus respaldos en un lugar seguro.</p>
+
+          <h3>11. Tus derechos</h3>
+          <p>Según el lugar donde vivas (por ejemplo, el RGPD en la Unión Europea y el Reino Unido, la LGPD en Brasil, la LFPDPPP en México o las leyes de privacidad de estados de EE. UU. como California), puedes tener derecho a acceder, rectificar, eliminar, limitar u oponerte al tratamiento de tus datos personales, a la portabilidad y a retirar tu consentimiento.</p>
+          <ul>
+            <li>Sobre los datos de operación, tú tienes control directo: están en tu dispositivo y puedes verlos, editarlos, exportarlos o borrarlos desde la app.</li>
+            <li>Sobre los datos de publicidad, puedes ejercer tus derechos ante Google y usar Opciones de privacidad de anuncios en la app.</li>
+            <li>Para cualquier solicitud o duda, escríbenos a <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>. Responderemos en un plazo razonable.</li>
+          </ul>
+          <p>Si resides en la UE o el Reino Unido, también puedes presentar una queja ante tu autoridad de protección de datos.</p>
+          <p><strong>Aviso para residentes de California y otros estados de EE. UU.</strong> No vendemos tu información personal ni la compartimos para publicidad dirigida más allá de lo que Google AdMob procese conforme a tu elección de consentimiento y a tus ajustes de anuncios.</p>
+
+          <h3>12. Base legal (usuarios del EEE, Reino Unido y Suiza)</h3>
+          <ul>
+            <li><strong>Ejecución del servicio:</strong> el tratamiento local de los datos que capturas es necesario para que la app funcione.</li>
+            <li><strong>Consentimiento:</strong> el uso de datos para anuncios personalizados se basa en tu consentimiento, que puedes retirar cuando quieras.</li>
+            <li><strong>Interés legítimo:</strong> medición básica de anuncios y prevención de fraude por parte de Google, conforme a su política.</li>
+          </ul>
+
+          <h3>13. Menores de edad</h3>
+          <p>La app está dirigida a negocios y personal de restaurantes y no está destinada a menores de 13 años (ni a menores de la edad mínima que establezca la ley de tu país). No recopilamos intencionalmente datos de menores. Si crees que un menor nos ha proporcionado información, escríbenos y la eliminaremos si estuviera en nuestro poder.</p>
+
+          <h3>14. Responsabilidad del negocio usuario</h3>
+          <p>Si usas la app en tu negocio, tú eres responsable de los datos que captures sobre tu personal y tus clientes (por ejemplo, nombres en pedidos para llevar) y de cumplir las leyes que te apliquen, incluido informar a tus empleados y clientes cuando corresponda.</p>
+
+          <h3>15. Enlaces y servicios de terceros</h3>
+          <p>La app puede abrir otras apps (por ejemplo, WhatsApp) cuando tú lo eliges. No controlamos sus prácticas de privacidad; revisa sus políticas.</p>
+
+          <h3>16. Cambios a esta política</h3>
+          <p>Podemos actualizar esta política para reflejar cambios en la app o en la ley. Publicaremos la versión vigente en la ficha de Google Play y dentro de la app, con su fecha de actualización. Si el cambio es importante, te lo informaremos en la app. El uso continuado de la app tras un cambio implica que lo aceptas.</p>
+
+          <h3>17. Contacto</h3>
+          <p>Para preguntas, solicitudes o reclamaciones sobre privacidad:</p>
+          <p><strong>Emmanuel Vargas</strong><br>Correo: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions"><button class="pill copy-link" type="button" data-id="comandakds-meseros-cocina-pos">Copiar enlace</button><button class="pill" type="button" onclick="window.print()">Imprimir</button></div>
+        </article>
+
+        <article class="policy" id="candy-tube-blast-puzzle">
+          <div class="policy-head"><span class="app-icon" style="background:#db2777" aria-hidden="true">CT</span><h2>Política de Privacidad<span>Candy Tube Blast Puzzle</span></h2></div>
+          <p class="policy-meta"><strong>Última actualización:</strong> 16 de noviembre de 2026<br><strong>Desarrollador:</strong> Emmanuel Vargas<br><strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <h3>1. Introducción</h3>
+          <p>Esta Política de Privacidad explica qué información trata la aplicación para Android Candy Tube Blast Puzzle (en adelante, “la App”), cómo se utiliza y qué derechos tienes. La App es desarrollada por Emmanuel Vargas (en adelante, “el Desarrollador”), quien actúa como responsable del tratamiento de los datos descritos aquí.</p>
+          <p>Al usar la App aceptas esta política. Si no estás de acuerdo, te pedimos que no la utilices.</p>
+
+          <h3>2. Resumen</h3>
+          <ul>
+            <li>La App no te pide crear cuenta, ni tu nombre, correo, teléfono, ubicación, contactos, fotos ni micrófono.</li>
+            <li>Tu progreso de juego se guarda solo en tu dispositivo. El Desarrollador no tiene servidores donde se almacene.</li>
+            <li>La App muestra anuncios de Google AdMob (banner y anuncios recompensados), que pueden recopilar datos según se explica en la sección 5.</li>
+            <li>La App no incluye compras dentro de la aplicación.</li>
+          </ul>
+
+          <h3>3. Información que se guarda en tu dispositivo</h3>
+          <p>La App guarda de forma local, para que el juego funcione:</p>
+          <ul>
+            <li>Progreso del juego: niveles superados, monedas, potenciadores, estadísticas, objetos de la tienda y cosméticos desbloqueados.</li>
+            <li>Rachas diarias, avance de eventos y misiones.</li>
+            <li>Preferencias: sonido, música, vibración, símbolos de color para accesibilidad e idioma de la interfaz.</li>
+            <li>Estado de consentimiento de anuncios.</li>
+          </ul>
+          <p>Estos datos no se envían al Desarrollador ni a terceros. El archivo de progreso se almacena cifrado (AES-256-GCM, con una clave protegida por el Android Keystore) y está excluido de las copias de seguridad automáticas de Android. Por eso, si desinstalas la App o cambias de dispositivo, el progreso puede perderse, salvo que uses el código de respaldo descrito a continuación.</p>
+          <p><strong>Código de respaldo.</strong> La App permite generar un código de texto que contiene tu progreso, para que lo guardes tú mismo y lo restaures en otro dispositivo. El código lo genera y lo restaura la App en tu dispositivo, sin pasar por ningún servidor del Desarrollador. Tú decides dónde guardarlo y con quién compartirlo; quien tenga ese código podría restaurar tu progreso, así que no lo publiques.</p>
+
+          <h3>4. Información que NO recopilamos</h3>
+          <p>El Desarrollador no recopila, almacena ni vende: datos de identidad, datos de contacto, ubicación, contenido de tu dispositivo, información financiera ni datos de salud. La App no usa herramientas propias de analítica ni de reporte de fallos que envíen datos a servidores del Desarrollador.</p>
+
+          <h3>5. Publicidad (Google AdMob)</h3>
+          <p>La App es gratuita y se financia con publicidad de Google AdMob, un servicio de Google LLC. Se muestran banners y anuncios recompensados (que tú decides ver para obtener potenciadores o monedas). La App no muestra anuncios intersticiales a pantalla completa de forma automática.</p>
+          <p>Para mostrar anuncios, el SDK de Google Mobile Ads puede recopilar y tratar automáticamente, según tu consentimiento y la configuración de tu dispositivo:</p>
+          <ul>
+            <li>Identificadores del dispositivo y de publicidad (como el ID de publicidad de Android).</li>
+            <li>Dirección IP y datos aproximados de ubicación derivados de ella.</li>
+            <li>Información del dispositivo y del sistema (modelo, versión de Android, idioma, operador).</li>
+            <li>Datos de interacción con los anuncios (impresiones, clics, rendimiento).</li>
+            <li>Datos de diagnóstico del SDK.</li>
+          </ul>
+          <p>Google puede usar estos datos para mostrar anuncios, medir su rendimiento, prevenir fraude y mejorar sus servicios, y puede personalizar los anuncios si tú lo permites. El tratamiento que hace Google se rige por su propia política: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a> y por la información sobre cómo usa Google los datos de sitios y apps asociados: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></p>
+          <p>El Desarrollador no recibe tus datos personales a través de AdMob; solo accede a informes agregados y anónimos de rendimiento publicitario.</p>
+          <p><strong>Consentimiento (Google UMP)</strong></p>
+          <p>Cuando la ley lo exige (por ejemplo, en el Espacio Económico Europeo, el Reino Unido, Suiza y ciertos estados de EE. UU.), la App muestra al iniciar un formulario de consentimiento mediante la Plataforma de Mensajes de Usuario (UMP) de Google, certificada por el IAB. La App no solicita anuncios hasta que el consentimiento lo permite. Puedes cambiar tu decisión en cualquier momento desde Configuración › Opciones de privacidad de anuncios, cuando esa opción esté disponible en tu región.</p>
+          <p><strong>Cómo limitar la publicidad personalizada</strong></p>
+          <p>Puedes restablecer o eliminar tu ID de publicidad, o desactivar la personalización de anuncios, en los ajustes de Android (Ajustes › Google › Anuncios o Ajustes › Privacidad › Anuncios). Si lo haces, seguirás viendo anuncios, pero serán menos relevantes.</p>
+
+          <h3>6. Permisos de Android</h3>
+          <p>La App solicita únicamente los permisos necesarios para funcionar:</p>
+          <ul>
+            <li><strong>Internet y estado de la red:</strong> para cargar anuncios y comprobar si hay conexión. El juego en sí funciona sin conexión.</li>
+            <li><strong>ID de publicidad (AD_ID):</strong> para que AdMob pueda mostrar y medir anuncios, según tu consentimiento y ajustes.</li>
+            <li><strong>Vibración:</strong> para la respuesta háptica del juego. Puedes desactivarla en Configuración.</li>
+          </ul>
+
+          <h3>7. Compartición de datos con terceros</h3>
+          <p>El Desarrollador no vende ni alquila tu información. Los únicos terceros que pueden tratar datos a través de la App son Google (AdMob y UMP), en los términos de la sección 5. También podríamos divulgar información si una ley, una orden judicial o una autoridad competente lo exigiera.</p>
+
+          <h3>8. Conservación y eliminación de datos</h3>
+          <ul>
+            <li><strong>Datos locales:</strong> permanecen en tu dispositivo hasta que borres los datos de la App (Ajustes › Apps › Candy Tube › Almacenamiento › Borrar datos) o la desinstales. Con eso se elimina todo el progreso y las preferencias.</li>
+            <li><strong>Datos de anuncios:</strong> los conserva Google conforme a su política. Puedes gestionarlos desde tu cuenta de Google (<a href="https://myaccount.google.com" target="_blank" rel="noopener">https://myaccount.google.com</a>).</li>
+          </ul>
+          <p>Como el Desarrollador no almacena datos personales tuyos en servidores, no hay una cuenta que eliminar. Si crees que el Desarrollador tiene algún dato tuyo, escríbenos y lo atenderemos.</p>
+
+          <h3>9. Seguridad</h3>
+          <p>Aplicamos medidas razonables para proteger la información: cifrado del archivo de progreso, exclusión de las copias de seguridad automáticas y ausencia de transmisión de datos de juego a servidores propios. Ningún sistema es completamente seguro, por lo que no podemos garantizar una seguridad absoluta.</p>
+
+          <h3>10. Privacidad de los menores</h3>
+          <p>La App está dirigida a un público general y no está diseñada específicamente para niños menores de 13 años (ni de la edad mínima equivalente en tu país). No recopilamos a sabiendas datos personales de niños. Los anuncios se configuran para un público general. Si eres padre, madre o tutor y crees que un menor ha facilitado datos personales, contáctanos y actuaremos para eliminarlos.</p>
+
+          <h3>11. Tus derechos</h3>
+          <p>Según tu país (por ejemplo, el RGPD en la Unión Europea y Reino Unido, la CCPA/CPRA en California, la LGPD en Brasil o la legislación mexicana de protección de datos), puedes tener derecho a acceder, rectificar, suprimir, limitar u oponerte al tratamiento de tus datos, a la portabilidad y a retirar tu consentimiento en cualquier momento.</p>
+          <p>Dado que los datos de juego residen solo en tu dispositivo, puedes ejercer buena parte de estos derechos tú mismo (borrando los datos de la App o cambiando tu consentimiento de anuncios). Para los datos tratados por Google, usa los controles de tu cuenta de Google. Para cualquier otra solicitud, escríbenos a <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a>. Responderemos en un plazo razonable. También puedes presentar una reclamación ante la autoridad de protección de datos de tu país.</p>
+          <p><strong>Aviso para residentes de California:</strong> no vendemos tu información personal. Los datos que Google trata con fines publicitarios se rigen por la política de Google.</p>
+
+          <h3>12. Transferencias internacionales</h3>
+          <p>Los datos tratados por Google para publicidad pueden transferirse y procesarse en países distintos al tuyo, incluido Estados Unidos, bajo las garantías que Google indica en sus políticas.</p>
+
+          <h3>13. Enlaces a terceros</h3>
+          <p>La App puede abrir enlaces externos, como esta política, la política de Google o la ficha de Google Play. No controlamos el contenido ni las prácticas de privacidad de esos sitios.</p>
+
+          <h3>14. Cambios en esta política</h3>
+          <p>Podemos actualizar esta política. La versión vigente estará siempre disponible en la ficha de la App en Google Play y en el enlace de política de privacidad de la App, con su fecha de última actualización. Si los cambios son importantes, lo comunicaremos dentro de la App. El uso continuado de la App tras un cambio implica que lo aceptas.</p>
+
+          <h3>15. Contacto</h3>
+          <p>Si tienes preguntas o solicitudes sobre esta política o sobre tus datos, escribe a:</p>
+          <p><strong>Emmanuel Vargas</strong><br>Correo: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions"><button class="pill copy-link" type="button" data-id="candy-tube-blast-puzzle">Copiar enlace</button><button class="pill" type="button" onclick="window.print()">Imprimir</button></div>
+        </article>
+
+        <article class="policy" id="biblia-y-oracion-jesus">
+          <div class="policy-head"><span class="app-icon" style="background:#7c3aed" aria-hidden="true">BO</span><h2>Política de Privacidad<span>Biblia y Oración Jesús</span></h2></div>
+          <p class="policy-meta"><strong>Última actualización:</strong> 16 de noviembre de 2026<br><strong>Desarrollador:</strong> Emmanuel Vargas<br><strong>Correo de contacto:</strong> <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <h3>1. Introducción</h3>
+          <p>Esta Política de Privacidad explica cómo la aplicación “Biblia y Oración Jesús” (en adelante, “la App”), desarrollada por Emmanuel Vargas (en adelante, “el Desarrollador”), trata la información de las personas que la usan. Al instalar y usar la App aceptas esta política. Si no estás de acuerdo, te pedimos que no la uses.</p>
+
+          <h3>2. Resumen</h3>
+          <p>La App no te pide crear una cuenta, ni tu nombre, correo o teléfono. Tu diario de oración, tus notas, tus favoritos y tu confesión se guardan solo en tu teléfono y el Desarrollador no puede verlos. La App muestra anuncios de Google AdMob, que pueden recopilar ciertos datos del dispositivo según se describe en la sección 4. Para la voz natural, descarga un archivo de modelo de voz desde un servidor externo.</p>
+
+          <h3>3. Información que se guarda en tu dispositivo</h3>
+          <p>La App guarda localmente, dentro de su almacenamiento privado, la información que tú generas al usarla: el diario de oración, notas, versículos favoritos, progreso de lectura, la confesión y tus preferencias (tema, tamaño de letra, voz elegida, recordatorios y similares).</p>
+          <p>Esta información no se envía al Desarrollador ni a ningún servidor propio. El Desarrollador no tiene acceso a ella, no la vende ni la comparte. Las secciones sensibles (como el diario o la confesión) pueden protegerse con el bloqueo biométrico o el bloqueo de pantalla de tu dispositivo, y la App usa el cifrado del sistema Android para protegerlas. La App no recibe ni almacena tus huellas o datos faciales; la verificación la realiza únicamente el sistema operativo.</p>
+          <p>Si usas la función de respaldo o exportación, el archivo se genera en tu dispositivo y tú decides dónde guardarlo o con quién compartirlo. Desde ese momento, su protección depende de ti.</p>
+          <p>Al desinstalar la App, los datos almacenados localmente se eliminan, salvo los archivos de respaldo que hayas exportado por tu cuenta.</p>
+
+          <h3>4. Publicidad (Google AdMob)</h3>
+          <p>La App muestra anuncios tipo banner mediante Google AdMob, un servicio de Google LLC. Para mostrar y medir los anuncios, AdMob y sus socios pueden recopilar y usar automáticamente los siguientes datos del dispositivo: identificador de publicidad (ID de publicidad de Android), dirección IP, información del dispositivo y del sistema (modelo, versión de Android, idioma, tamaño de pantalla), datos de interacción con los anuncios (impresiones, clics), y datos de diagnóstico y rendimiento.</p>
+          <p>Estos datos se usan para mostrar anuncios, limitar su frecuencia, medir su rendimiento, prevenir fraudes y, si lo permites, personalizarlos. El Desarrollador no recibe tus datos personales a través de AdMob, solo informes agregados y anónimos.</p>
+          <p>La App declara el permiso com.google.android.gms.permission.AD_ID para acceder al ID de publicidad. Puedes restablecerlo o eliminarlo en los ajustes de Android (Ajustes &gt; Google &gt; Anuncios), o desactivar la personalización de anuncios. Si lo eliminas, los anuncios seguirán apareciendo, pero no estarán personalizados.</p>
+          <p>La App configura el contenido de los anuncios para que sea apto para todo público.</p>
+          <p>Puedes consultar cómo Google usa los datos en “Cómo usa Google los datos de sitios o apps que utilizan nuestros servicios”: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a> y en la Política de Privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+
+          <h3>5. Consentimiento (Plataforma de Mensajes de Usuario de Google)</h3>
+          <p>Cuando la ley lo exige (por ejemplo, en el Espacio Económico Europeo, el Reino Unido y Suiza, y en algunos estados de EE. UU.), la App muestra un formulario de consentimiento mediante la Plataforma de Mensajes de Usuario (UMP) de Google antes de mostrar anuncios. Allí puedes aceptar, rechazar o gestionar tus opciones. La App solo solicita anuncios cuando el consentimiento aplicable lo permite.</p>
+          <p>Puedes cambiar tu decisión en cualquier momento desde Ajustes &gt; Opciones de privacidad dentro de la App, cuando esa opción esté disponible para tu región.</p>
+
+          <h3>6. Descarga de la voz natural</h3>
+          <p>Para ofrecer una voz más natural, la App descarga una sola vez (aproximadamente 354 MB) los archivos del modelo de voz desde Hugging Face (huggingface.co). Esa descarga es anónima: la App no envía ningún dato personal ni contenido tuyo. Como en cualquier conexión a Internet, el servidor que aloja los archivos puede registrar tu dirección IP y datos técnicos básicos de la conexión, según su propia política de privacidad (<a href="https://huggingface.co/privacy" target="_blank" rel="noopener">https://huggingface.co/privacy</a>).</p>
+          <p>Una vez descargado, el modelo funciona sin conexión: el texto que la App lee en voz alta se procesa en tu dispositivo y no se envía a ningún servidor. Si tu dispositivo no es compatible o prefieres no descargarlo, la App usa la voz de síntesis instalada en tu teléfono (motor de Android), que se rige por la política del fabricante o del proveedor de ese motor. Puedes eliminar el modelo descargado en cualquier momento desde Ajustes.</p>
+
+          <h3>7. Permisos que utiliza la App</h3>
+          <p>La App solicita únicamente los permisos necesarios: Internet y estado de la red, para descargar la voz, mostrar anuncios y comprobar si estás en Wi-Fi o datos móviles; ID de publicidad (AD_ID), para el funcionamiento de AdMob; y, si activas recordatorios, el permiso para mostrar notificaciones. La App no accede a tu ubicación, contactos, cámara, micrófono, fotos ni mensajes.</p>
+
+          <h3>8. Lo que NO hacemos</h3>
+          <p>El Desarrollador no vende datos personales, no crea perfiles de usuario, no usa cuentas ni registros, no rastrea tu ubicación y no comparte el contenido de tu diario, notas o confesión con nadie. La App no usa herramientas de análisis de terceros distintas de las descritas aquí.</p>
+
+          <h3>9. Compartir información con terceros</h3>
+          <p>Los únicos terceros que pueden recibir datos técnicos a través de la App son Google (AdMob y UMP), descritos en las secciones 4 y 5, y Hugging Face, descrito en la sección 6. Podremos divulgar información si una ley, una orden judicial o una autoridad competente lo exige.</p>
+
+          <h3>10. Conservación y eliminación de datos</h3>
+          <p>Los datos de la App permanecen en tu dispositivo mientras la tengas instalada. Puedes borrar entradas concretas desde la App, eliminar el modelo de voz desde Ajustes, o borrar todo desinstalando la App o usando Ajustes de Android &gt; Apps &gt; Biblia y Oración Jesús &gt; Almacenamiento &gt; Borrar datos.</p>
+          <p>Como el Desarrollador no almacena tus datos personales en servidores propios, no hay datos tuyos que él pueda eliminar. Para los datos que tratan Google u otros terceros, aplican sus propios mecanismos de eliminación y control (por ejemplo, restablecer el ID de publicidad). Si tienes dudas sobre cualquier solicitud de eliminación, escríbenos al correo indicado.</p>
+
+          <h3>11. Privacidad de los menores</h3>
+          <p>La App tiene contenido religioso apto para todo público, pero no está dirigida específicamente a menores de 13 años y el Desarrollador no recopila a sabiendas datos personales de ellos. Los anuncios se configuran con clasificación de contenido para todo público. Si eres padre, madre o tutor y crees que un menor nos ha proporcionado datos personales, escríbenos para que los eliminemos. Se recomienda que los menores usen la App con supervisión de un adulto.</p>
+
+          <h3>12. Seguridad</h3>
+          <p>Aplicamos medidas razonables para proteger la información: almacenamiento privado de la App, cifrado mediante Android Keystore para datos sensibles, comunicaciones únicamente por HTTPS y ausencia de servidores propios con datos de usuarios. Ningún sistema es totalmente seguro, por lo que te recomendamos mantener actualizado tu dispositivo y proteger su acceso con bloqueo de pantalla.</p>
+
+          <h3>13. Tus derechos</h3>
+          <p>Según tu país o región (por ejemplo, el Reglamento General de Protección de Datos de la UE, la Ley Federal de Protección de Datos Personales en Posesión de los Particulares de México, la CCPA/CPRA de California u otras leyes aplicables), puedes tener derecho a acceder, rectificar, suprimir, limitar u oponerte al tratamiento de tus datos, a retirar tu consentimiento en cualquier momento y a presentar una queja ante tu autoridad de protección de datos.</p>
+          <p>Como el Desarrollador no almacena datos personales identificables, la mayoría de estos derechos los ejerces directamente desde tu dispositivo (secciones 3 y 10) y desde las opciones de privacidad de Google (sección 5). Para cualquier solicitud, escríbenos a <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a> y responderemos en un plazo razonable.</p>
+
+          <h3>14. Transferencias internacionales</h3>
+          <p>Google y Hugging Face pueden procesar datos en servidores ubicados fuera de tu país. Estos terceros aplican sus propias garantías para las transferencias internacionales, conforme a sus políticas.</p>
+
+          <h3>15. Enlaces y servicios de terceros</h3>
+          <p>La App puede contener enlaces o servicios de terceros (por ejemplo, Google). El Desarrollador no controla sus prácticas de privacidad y te recomienda leer sus políticas.</p>
+
+          <h3>16. Contenido bíblico</h3>
+          <p>La Biblia incluida en la App es la versión Reina-Valera 1909, que es de dominio público.</p>
+
+          <h3>17. Cambios en esta política</h3>
+          <p>Podemos actualizar esta política cuando cambien la App, la ley o los servicios que usa. La fecha de “Última actualización” indicará la versión vigente. Si los cambios son importantes, te lo informaremos dentro de la App o en su ficha de Google Play. El uso continuado de la App tras un cambio implica que lo aceptas.</p>
+
+          <h3>18. Contacto</h3>
+          <p>Si tienes preguntas, comentarios o solicitudes sobre esta política o sobre tus datos, contacta al Desarrollador:</p>
+          <p><strong>Emmanuel Vargas</strong><br>Correo electrónico: <a href="mailto:axiebecashv@gmail.com">axiebecashv@gmail.com</a></p>
+
+          <div class="policy-actions"><button class="pill copy-link" type="button" data-id="biblia-y-oracion-jesus">Copiar enlace</button><button class="pill" type="button" onclick="window.print()">Imprimir</button></div>
         </article>
 
         <!-- PLANTILLA PARA UNA APP NUEVA:
